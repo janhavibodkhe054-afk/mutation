@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-
 import {
   X,
   ArrowLeft,
   MessageCircle,
   Phone,
   ArrowRight,
+  Check,
 } from "lucide-react";
 
 /* =========================================================
@@ -13,6 +13,9 @@ import {
 ========================================================= */
 
 const products = [
+  /* =======================================================
+     1. ANTI HAIRFALL SHAMPOO
+  ======================================================= */
   {
     id: 1,
     name: "Anti Hairfall Shampoo",
@@ -21,88 +24,83 @@ const products = [
 
     image: "/anti-hairfall.jpeg",
 
-    gallery: ["/anti-hairfall.jpeg"],
-
     specs: [
-      ["Key Ingredient", "Herbal"],
-      ["Pack Size", "100ml"],
-      ["Hair Concern", "Hair Fall Control, Hair Growth"],
-      ["Formulation Claim", "Paraben-Free, Sulphate-Free"],
-      ["Hair Type", "All Hair Types"],
-      ["Ideal For", "Unisex"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Bottle"],
+      ["Brand Name", "Mutation Dermacare"],
+      ["Product Name", "Anti Hair Fall Shampoo"],
+      ["Pack Size", "100 g"],
+      ["Skin Type", "Dry, Normal, Oily"],
+      ["Age Group", "Above 15 Years"],
+      ["Fragrance", "No"],
+      [
+        "Key Ingredients",
+        "Aamalaki, Kusath, Kumari, Kuwath, Bhringraj Kuwath",
+      ],
       ["Shelf Life", "24 Months"],
-      ["Scent", "Herbal"],
-      ["Customisation", "Customize as per customer"],
+      ["Storage", "Store in Cool & Dry Place"],
+      ["Country of Origin", "India"],
     ],
 
-    description:
-      "Strengthen and smooth your hair with our Anti Hairfall Shampoo.",
-
     features: [
-      "Helps reduce hair breakage",
-      "Natural ingredients: Argan, Beetroot, Aloe Vera, Coconut",
-      "Paraben-free and sulphate-free",
-      "Suitable for all hair types",
-      "Pleasant fragrance",
+      "Herbal ingredient-based hair care formulation",
+      "Contains Aamalaki, Kumari and Bhringraj-based ingredients",
+      "Suitable for dry, normal and oily types",
+      "Designed for regular hair care",
     ],
 
     benefits: [
-      "Strengthens hair",
-      "Smoothens hair",
-      "Improves hair texture",
-      "Targets damaged hair",
+      "Supports everyday hair care",
+      "Helps maintain healthy-looking hair",
+      "Suitable for regular cleansing routines",
+      "Convenient everyday hair care solution",
     ],
-
-    ingredients:
-      "Argan Oil, Beetroot Extract, Aloe Vera Gel, Coconut Oil",
-
-    certifications: "MSDS, GMP, ISO 9001",
   },
 
+  /* =======================================================
+     2. NEEM SKIN CARE DUSTING POWDER
+  ======================================================= */
   {
     id: 2,
-    name: "Dusting Powder",
+    name: "Neem Skin Care Dusting Powder",
     category: "Personal Care",
     badge: "New",
 
     image: "/dusting-powder.jpeg",
 
-    gallery: ["/dusting-powder.jpeg"],
-
     specs: [
-      ["Product Type", "Dusting Powder"],
-      ["Category", "Personal Care"],
-      ["Usage", "Everyday Personal Care"],
-      ["Ideal For", "Regular Use"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Container"],
-      ["Supply Type", "Retail & Bulk"],
-      ["Customisation", "Customize as per customer"],
+      ["Brand Name", "Mutation Dermacare"],
+      ["Product Name", "Neem Skin Care Dusting Powder"],
+      ["Pack Size", "100 g"],
+      ["Skin Type", "Oily & Normal Skin"],
+      ["Age Group", "Above 20 Years"],
+      ["Fragrance", "No"],
+      [
+        "Key Ingredients",
+        "Neem Churna, Tankan Bhasma, Gandhak Bhasma, Kapoor",
+      ],
+      ["Form", "Powder"],
+      ["Shelf Life", "24 Months"],
+      ["Storage", "Store in Cool & Dry Place"],
+      ["Country of Origin", "India"],
     ],
 
-    description:
-      "Dusting Powder developed for everyday personal care and hygiene requirements.",
-
     features: [
-      "Easy everyday application",
-      "Convenient packaging",
-      "Suitable for regular personal care",
-      "Available for bulk requirements",
+      "Neem-based skin care powder",
+      "Powder formulation for convenient application",
+      "Suitable for oily and normal skin",
+      "Fragrance-free formulation",
     ],
 
     benefits: [
-      "Supports everyday freshness",
-      "Convenient to use",
-      "Suitable for daily personal care",
+      "Supports everyday personal care",
+      "Helps maintain a fresh skin feel",
+      "Easy to include in a regular hygiene routine",
+      "Convenient powder format for everyday use",
     ],
-
-    ingredients: "Product formulation details available on enquiry.",
-
-    certifications: "Details available on enquiry",
   },
 
+  /* =======================================================
+     3. FAIRNESS FACE GEL
+  ======================================================= */
   {
     id: 3,
     name: "Fairness Face Gel",
@@ -111,41 +109,42 @@ const products = [
 
     image: "/fairness-gel.jpeg",
 
-    gallery: ["/fairness-gel.jpeg"],
-
     specs: [
-      ["Product Type", "Face Gel"],
-      ["Category", "Face Care"],
-      ["Texture", "Gel"],
-      ["Usage", "Everyday Face Care"],
-      ["Ideal For", "Regular Use"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Jar"],
-      ["Supply Type", "Retail & Bulk"],
-      ["Customisation", "Customize as per customer"],
+      ["Brand Name", "Mutation Dermacare"],
+      ["Product Name", "Fairness Face Gel"],
+      ["Pack Size", "50 g"],
+      ["Skin Type", "All Types"],
+      ["Age Group", "30–60 Years"],
+      ["Fragrance", "No"],
+      [
+        "Key Ingredients",
+        "Saffron Hydrosol, Niacinamide, Hyaluronic Acid, Kojic Acid, Glycerine, EDTA, Carbopol 940, DMDM, DW, TEA",
+      ],
+      ["Form", "Gel"],
+      ["Shelf Life", "24 Months"],
+      ["Storage", "Store in Cool & Dry Place"],
+      ["Country of Origin", "India"],
     ],
 
-    description:
-      "A lightweight face gel developed for convenient everyday face care.",
-
     features: [
-      "Lightweight gel texture",
-      "Easy everyday application",
-      "Designed for regular face care",
-      "Convenient packaging",
+      "Lightweight gel-based formulation",
+      "Contains Saffron Hydrosol and Niacinamide",
+      "Formulated with Hyaluronic Acid and Kojic Acid",
+      "Suitable for all skin types",
+      "Fragrance-free formulation",
     ],
 
     benefits: [
-      "Supports everyday skincare",
-      "Easy to include in daily routine",
-      "Convenient face care solution",
+      "Supports everyday facial skincare",
+      "Helps maintain a hydrated skin feel",
+      "Easy to include in a regular skincare routine",
+      "Lightweight gel format for convenient application",
     ],
-
-    ingredients: "Product formulation details available on enquiry.",
-
-    certifications: "Details available on enquiry",
   },
 
+  /* =======================================================
+     4. MOISTURISING CREAM
+  ======================================================= */
   {
     id: 4,
     name: "Moisturising Cream",
@@ -154,124 +153,121 @@ const products = [
 
     image: "/moisturising.jpeg",
 
-    gallery: ["/moisturising.jpeg"],
-
     specs: [
-      ["Product Type", "Moisturising Cream"],
-      ["Category", "Skin Care"],
-      ["Usage", "Everyday Moisturisation"],
-      ["Ideal For", "Daily Skin Care"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Jar"],
-      ["Supply Type", "Retail & Bulk"],
-      ["Customisation", "Customize as per customer"],
+      ["Brand Name", "Mutation Dermacare"],
+      ["Product Name", "Moisturising Cream"],
+      ["Pack Size", "50 g"],
+      ["Skin Type", "All"],
+      ["Age Group", "Above 6 Months"],
+      ["Fragrance", "Mogra"],
+      [
+        "Key Ingredients",
+        "Calendula Flower Extract, Calendula Hydrosol, Shea Butter",
+      ],
+      ["Form", "Cream"],
+      ["Shelf Life", "24 Months"],
+      ["Storage", "Store in Cool & Dry Place"],
+      ["Country of Origin", "India"],
     ],
 
-    description:
-      "An everyday moisturising cream developed for convenient daily skincare.",
-
     features: [
-      "Cream-based formulation",
-      "Suitable for everyday skincare",
-      "Convenient jar packaging",
-      "Designed for regular use",
+      "Cream-based moisturising formulation",
+      "Contains Calendula Flower Extract",
+      "Formulated with Calendula Hydrosol and Shea Butter",
+      "Suitable for all skin types",
+      "Mogra fragrance",
     ],
 
     benefits: [
-      "Supports everyday moisturisation",
-      "Helps maintain comfortable-feeling skin",
-      "Easy to include in daily skincare",
+      "Supports everyday skin moisturisation",
+      "Helps maintain soft and comfortable-feeling skin",
+      "Suitable for regular skincare routines",
+      "Convenient cream format for everyday application",
     ],
-
-    ingredients: "Product formulation details available on enquiry.",
-
-    certifications: "Details available on enquiry",
   },
 
+  /* =======================================================
+     5. MOISTURISING BATHING BAR
+  ======================================================= */
   {
     id: 5,
-    name: "Moisturising Soap",
+    name: "Moisturising Bathing Bar",
     category: "Bath Care",
     badge: "New",
 
     image: "/moisturising-soap.jpeg",
 
-    gallery: ["/moisturising-soap.jpeg"],
-
     specs: [
-      ["Product Type", "Moisturising Soap"],
-      ["Category", "Bath Care"],
-      ["Usage", "Daily Cleansing"],
-      ["Ideal For", "Everyday Bath Care"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Soap Pack"],
-      ["Supply Type", "Retail & Bulk"],
-      ["Customisation", "Customize as per customer"],
+      ["Brand Name", "Mutation Dermacare"],
+      ["Product Name", "Moisturising Bathing Bar"],
+      ["Pack Size", "100 g"],
+      ["Skin Type", "All"],
+      ["Age Group", "Above 30 Years"],
+      ["Fragrance", "No"],
+      ["Key Ingredients", "Vitamin E, Glycerine, Hyaluronic Acid"],
+      ["Shelf Life", "36 Months"],
+      ["Storage", "Store in Cool & Dry Place"],
+      ["Country of Origin", "India"],
     ],
 
-    description:
-      "A daily cleansing soap developed for convenient everyday bath care.",
-
     features: [
-      "Designed for daily cleansing",
-      "Convenient bath care format",
-      "Suitable for everyday use",
-      "Available for bulk requirements",
+      "Moisturising bathing bar formulation",
+      "Contains Vitamin E and Glycerine",
+      "Formulated with Hyaluronic Acid",
+      "Suitable for all skin types",
+      "Fragrance-free",
     ],
 
     benefits: [
-      "Supports everyday cleansing",
-      "Convenient for daily bath care",
-      "Suitable for regular personal care",
+      "Supports everyday skin cleansing",
+      "Helps maintain a moisturised skin feel",
+      "Convenient for regular bath care",
+      "Suitable for everyday personal care routines",
     ],
-
-    ingredients: "Product formulation details available on enquiry.",
-
-    certifications: "Details available on enquiry",
   },
 
+  /* =======================================================
+     6. NEEM BATHING BAR
+  ======================================================= */
   {
     id: 6,
-    name: "Neem Care Soap",
+    name: "Neem Bathing Bar",
     category: "Bath Care",
     badge: "New",
 
     image: "/neem-soap.jpeg",
 
-    gallery: ["/neem-soap.jpeg"],
-
     specs: [
-      ["Key Ingredient", "Neem"],
-      ["Product Type", "Care Soap"],
-      ["Category", "Bath Care"],
-      ["Usage", "Daily Cleansing"],
-      ["Ideal For", "Everyday Bath Care"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Soap Pack"],
-      ["Supply Type", "Retail & Bulk"],
+      ["Brand Name", "Mutation Dermacare"],
+      ["Product Name", "Neem Bathing Bar"],
+      ["Pack Size", "100 g"],
+      ["Skin Type", "All"],
+      ["Age Group", "Above 20 Years"],
+      ["Fragrance", "No"],
+      ["Key Ingredients", "Neem, Camphor, Rosemary"],
+      ["Shelf Life", "36 Months"],
+      ["Country of Origin", "India"],
     ],
 
-    description:
-      "Neem Care Soap developed for convenient everyday cleansing and bath care.",
-
     features: [
-      "Neem-based care",
+      "Neem-based bathing bar",
+      "Contains Neem, Camphor and Rosemary",
+      "Suitable for all skin types",
       "Designed for everyday cleansing",
-      "Convenient soap format",
-      "Suitable for regular use",
+      "Fragrance-free",
     ],
 
     benefits: [
-      "Supports daily cleansing",
-      "Convenient for regular bath routines",
-      "Practical everyday personal care",
+      "Supports regular skin cleansing",
+      "Suitable for everyday bath care",
+      "Convenient for regular personal care",
+      "Neem-based option for daily cleansing routines",
     ],
-
-    ingredients: "Neem and supporting soap formulation ingredients.",
-
-    certifications: "Details available on enquiry",
   },
 
+  /* =======================================================
+     7. SAFFRON RADIANCE FACE WASH
+  ======================================================= */
   {
     id: 7,
     name: "Saffron Radiance Face Wash",
@@ -280,41 +276,38 @@ const products = [
 
     image: "/radiance-face-wash.jpeg",
 
-    gallery: ["/radiance-face-wash.jpeg"],
-
     specs: [
-      ["Key Ingredient", "Saffron"],
-      ["Product Type", "Face Wash"],
-      ["Category", "Face Care"],
-      ["Usage", "Everyday Face Cleansing"],
-      ["Ideal For", "Daily Face Care"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Bottle"],
-      ["Supply Type", "Retail & Bulk"],
+      ["Brand Name", "Mutation Dermacare"],
+      ["Product Name", "Saffron Radiance Face Wash"],
+      ["Pack Size", "100 g"],
+      ["Skin Type", "All"],
+      ["Age Group", "30–60 Years"],
+      ["Fragrance", "Rose"],
+      ["Key Ingredients", "Saffron Hydrosol"],
+      ["Shelf Life", "24 Months"],
+      ["Storage", "Store in Cool & Dry Place"],
+      ["Country of Origin", "India"],
     ],
 
-    description:
-      "Saffron Radiance Face Wash developed for everyday cleansing and face care.",
-
     features: [
-      "Saffron-based face care",
-      "Designed for everyday cleansing",
-      "Convenient bottle format",
-      "Suitable for regular face care",
+      "Saffron Hydrosol-based face care formulation",
+      "Designed for everyday facial cleansing",
+      "Suitable for all skin types",
+      "Rose fragrance",
+      "Convenient face wash format",
     ],
 
     benefits: [
-      "Supports everyday face cleansing",
-      "Easy to include in skincare routines",
-      "Convenient daily face care",
+      "Supports everyday facial cleansing",
+      "Helps maintain a fresh and clean skin feel",
+      "Easy to include in daily skincare routines",
+      "Suitable for regular face care",
     ],
-
-    ingredients:
-      "Saffron and supporting face wash formulation ingredients.",
-
-    certifications: "Details available on enquiry",
   },
 
+  /* =======================================================
+     8. BABY SOFT SKIN LOTION
+  ======================================================= */
   {
     id: 8,
     name: "Baby Soft Skin Lotion",
@@ -323,38 +316,37 @@ const products = [
 
     image: "/baby-lotion.jpeg",
 
-    gallery: ["/baby-lotion.jpeg"],
-
     specs: [
-      ["Product Type", "Baby Lotion"],
-      ["Category", "Baby Care"],
-      ["Usage", "Skin Moisturisation"],
-      ["Ideal For", "Baby Care"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Bottle"],
-      ["Supply Type", "Retail & Bulk"],
-      ["Customisation", "Customize as per customer"],
+      ["Brand Name", "Mutation Dermacare"],
+      ["Product Name", "Baby Soft Skin Lotion"],
+      ["Pack Size", "100 g"],
+      ["Skin Type", "All"],
+      ["Age Group", "0–6 Months, 6 Months–10 Years"],
+      ["Fragrance", "Baby Fragrance"],
+      [
+        "Key Ingredients",
+        "Calendula Hydrosol, Glycerine, Almond Oil, Vitamin E",
+      ],
+      ["Form", "Lotion"],
+      ["Shelf Life", "24 Months"],
+      ["Storage", "Store in Cool & Dry Place"],
+      ["Country of Origin", "India"],
     ],
 
-    description:
-      "Baby Soft Skin Lotion developed for convenient everyday baby care.",
-
     features: [
-      "Designed for baby care routines",
-      "Convenient lotion format",
-      "Easy everyday application",
-      "Practical bottle packaging",
+      "Lotion formulation developed for baby care",
+      "Contains Calendula Hydrosol and Glycerine",
+      "Formulated with Almond Oil and Vitamin E",
+      "Suitable for all skin types",
+      "Baby fragrance",
     ],
 
     benefits: [
-      "Supports everyday moisturising",
-      "Easy to apply",
-      "Convenient for regular baby care",
+      "Supports everyday baby skin moisturisation",
+      "Helps maintain soft and comfortable-feeling skin",
+      "Easy-to-apply lotion format",
+      "Convenient for regular baby care routines",
     ],
-
-    ingredients: "Product formulation details available on enquiry.",
-
-    certifications: "Details available on enquiry",
   },
 ];
 
@@ -364,19 +356,18 @@ const products = [
 
 const ProductsSection = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [activeImage, setActiveImage] = useState(0);
 
   const openProduct = (product) => {
     setSelectedProduct(product);
-    setActiveImage(0);
   };
 
   const closeModal = () => {
     setSelectedProduct(null);
-    setActiveImage(0);
   };
 
-  /* BODY SCROLL LOCK */
+  /* =========================================================
+     BODY SCROLL LOCK
+  ========================================================= */
 
   useEffect(() => {
     if (selectedProduct) {
@@ -390,7 +381,9 @@ const ProductsSection = () => {
     };
   }, [selectedProduct]);
 
-  /* ESC CLOSE */
+  /* =========================================================
+     ESC CLOSE
+  ========================================================= */
 
   useEffect(() => {
     const handleEscape = (event) => {
@@ -406,7 +399,9 @@ const ProductsSection = () => {
     };
   }, []);
 
-  /* WHATSAPP */
+  /* =========================================================
+     WHATSAPP
+  ========================================================= */
 
   const getWhatsAppLink = () => {
     if (!selectedProduct) return "#";
@@ -429,9 +424,7 @@ const ProductsSection = () => {
         className="relative bg-[#F7F7F5] py-14 sm:py-16 lg:py-[68px]"
       >
         <div className="mx-auto max-w-[1280px] px-5 sm:px-7 lg:px-10 xl:px-12">
-          {/* =================================================
-              HEADING
-          ================================================= */}
+          {/* HEADING */}
 
           <div className="mb-9 max-w-[700px]">
             <div className="flex items-center gap-3">
@@ -453,9 +446,7 @@ const ProductsSection = () => {
             </p>
           </div>
 
-          {/* =================================================
-              PRODUCTS GRID
-          ================================================= */}
+          {/* PRODUCTS GRID */}
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {products.map((product) => (
@@ -481,29 +472,14 @@ const ProductsSection = () => {
                 {/* IMAGE */}
 
                 <div className="relative flex h-[245px] items-center justify-center overflow-hidden bg-[#F4F3EF] sm:h-[255px]">
-                  {/* NEW */}
-
-                  <span
-                    className="
-                      absolute
-                      right-3
-                      top-3
-                      z-10
-                      rounded-[6px]
-                      bg-orange-500
-                      px-3
-                      py-[6px]
-                      text-[11px]
-                      font-bold
-                      text-white
-                    "
-                  >
+                  <span className="absolute right-3 top-3 z-10 rounded-[6px] bg-orange-500 px-3 py-[6px] text-[11px] font-bold text-white">
                     {product.badge}
                   </span>
 
                   <img
                     src={product.image}
                     alt={product.name}
+                    loading="lazy"
                     className="
                       h-full
                       w-full
@@ -523,47 +499,18 @@ const ProductsSection = () => {
                     {product.category}
                   </span>
 
-                  <h3
-                    className="
-                      mt-1.5
-                      min-h-[48px]
-                      text-[17px]
-                      font-bold
-                      leading-[1.4]
-                      text-[#182720]
-                      sm:text-[18px]
-                    "
-                  >
+                  <h3 className="mt-1.5 min-h-[48px] text-[17px] font-bold leading-[1.4] text-[#182720] sm:text-[18px]">
                     {product.name}
                   </h3>
 
-                  <div
-                    className="
-                      mt-3
-                      flex
-                      items-center
-                      justify-end
-                      gap-3
-                      border-t
-                      border-[#E8EBE9]
-                      pt-3
-                    "
-                  >
+                  <div className="mt-3 flex items-center justify-end border-t border-[#E8EBE9] pt-3">
                     <button
                       type="button"
                       onClick={(event) => {
                         event.stopPropagation();
                         openProduct(product);
                       }}
-                      className="
-                        group/button
-                        inline-flex
-                        items-center
-                        gap-1.5
-                        text-[12px]
-                        font-bold
-                        text-[#367762]
-                      "
+                      className="group/button inline-flex items-center gap-1.5 text-[12px] font-bold text-[#367762]"
                     >
                       View Details
 
@@ -594,8 +541,9 @@ const ProductsSection = () => {
             items-center
             justify-center
             overflow-y-auto
-            bg-black/60
+            bg-black/65
             p-2
+            backdrop-blur-[2px]
             sm:p-4
           "
           onClick={closeModal}
@@ -610,16 +558,14 @@ const ProductsSection = () => {
               my-auto
               max-h-[95vh]
               w-full
-              max-w-[780px]
+              max-w-[800px]
               overflow-y-auto
-              rounded-[9px]
+              rounded-[12px]
               bg-white
               shadow-[0_25px_80px_rgba(0,0,0,0.30)]
             "
           >
-            {/* =================================================
-                MODAL HEADER
-            ================================================= */}
+            {/* MODAL HEADER */}
 
             <div
               className="
@@ -627,7 +573,7 @@ const ProductsSection = () => {
                 top-0
                 z-30
                 flex
-                min-h-[56px]
+                min-h-[58px]
                 items-center
                 justify-between
                 border-b
@@ -638,64 +584,28 @@ const ProductsSection = () => {
               "
             >
               <div className="flex min-w-0 items-center gap-2">
-                {/* BACK */}
-
                 <button
                   type="button"
                   onClick={closeModal}
                   aria-label="Back"
-                  className="
-                    flex
-                    h-[34px]
-                    w-[34px]
-                    shrink-0
-                    items-center
-                    justify-center
-                    rounded-full
-                    text-[#252B28]
-                    transition-colors
-                    duration-200
-                    hover:bg-[#F1F2F1]
-                  "
+                  className="flex h-[34px] w-[34px] shrink-0 items-center justify-center rounded-full text-[#252B28] transition-colors hover:bg-[#F1F2F1]"
                 >
                   <ArrowLeft size={21} strokeWidth={2.2} />
                 </button>
 
-                {/* TITLE */}
-
                 <h2
                   id="product-modal-title"
-                  className="
-                    truncate
-                    text-[17px]
-                    font-bold
-                    text-[#202622]
-                    sm:text-[19px]
-                  "
+                  className="truncate text-[17px] font-bold text-[#202622] sm:text-[19px]"
                 >
                   {selectedProduct.name}
                 </h2>
               </div>
 
-              {/* CLOSE */}
-
               <button
                 type="button"
                 onClick={closeModal}
                 aria-label="Close"
-                className="
-                  flex
-                  h-[34px]
-                  w-[34px]
-                  shrink-0
-                  items-center
-                  justify-center
-                  rounded-full
-                  text-[#252B28]
-                  transition-colors
-                  duration-200
-                  hover:bg-[#F1F2F1]
-                "
+                className="flex h-[34px] w-[34px] shrink-0 items-center justify-center rounded-full text-[#252B28] transition-colors hover:bg-[#F1F2F1]"
               >
                 <X size={20} strokeWidth={2.2} />
               </button>
@@ -705,145 +615,145 @@ const ProductsSection = () => {
                 MODAL CONTENT
             ================================================= */}
 
-            <div className="px-4 pb-4 pt-4 sm:px-6 sm:pb-5">
-              {/* =================================================
-                  IMAGES
-              ================================================= */}
+            <div className="px-4 pb-5 pt-4 sm:px-6">
+              {/* LARGE PRODUCT IMAGE */}
 
-              <div className="flex gap-2.5 overflow-x-auto pb-1">
-                {selectedProduct.gallery.map((image, index) => (
-                  <button
-                    key={index}
-                    type="button"
-                    onClick={() => setActiveImage(index)}
-                    className={`
-                      flex
-                      h-[100px]
-                      w-[100px]
-                      shrink-0
-                      items-center
-                      justify-center
-                      overflow-hidden
-                      rounded-[5px]
-                      border
-                      bg-white
-                      p-2
-                      transition-colors
-                      duration-200
-                      sm:h-[115px]
-                      sm:w-[115px]
-
-                      ${
-                        activeImage === index
-                          ? "border-[#438D76]"
-                          : "border-[#D5D9D7]"
-                      }
-                    `}
-                  >
-                    <img
-                      src={image}
-                      alt={`${selectedProduct.name} ${index + 1}`}
-                      className="h-full w-full object-contain"
-                    />
-                  </button>
-                ))}
-              </div>
-
-              {/* =================================================
-                  SPECIFICATIONS
-              ================================================= */}
-
-              <div className="mt-4">
-                {selectedProduct.specs.map(([label, value], index) => (
-                  <div
-                    key={`${label}-${index}`}
-                    className="
-                      grid
-                      grid-cols-[40%_60%]
-                      gap-2
-                      py-[3px]
-                      sm:grid-cols-[38%_62%]
-                    "
-                  >
-                    <span
-                      className="
-                        text-[13px]
-                        font-medium
-                        leading-[1.5]
-                        text-[#525B56]
-                        sm:text-[14px]
-                      "
-                    >
-                      {label}
-                    </span>
-
-                    <span
-                      className="
-                        text-[13px]
-                        font-medium
-                        leading-[1.5]
-                        text-[#252C28]
-                        sm:text-[14px]
-                      "
-                    >
-                      {value}
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-              {/* =================================================
-                  DESCRIPTION
-              ================================================= */}
-
-              <div className="mt-4 border-t border-[#E0E2E1] pt-3">
-                <p
+              <div
+                className="
+                  group/image
+                  relative
+                  flex
+                  h-[290px]
+                  w-full
+                  items-center
+                  justify-center
+                  overflow-hidden
+                  rounded-[12px]
+                  border
+                  border-[#E1E5E2]
+                  bg-[#F7F7F5]
+                  sm:h-[360px]
+                "
+              >
+                <span
                   className="
-                    text-[14px]
-                    font-medium
-                    leading-[1.55]
-                    text-[#3D4541]
-                    sm:text-[15px]
+                    absolute
+                    left-4
+                    top-4
+                    z-20
+                    rounded-full
+                    border
+                    border-[#DCE5E0]
+                    bg-white
+                    px-3
+                    py-1.5
+                    text-[10px]
+                    font-bold
+                    uppercase
+                    tracking-[0.1em]
+                    text-[#367762]
                   "
                 >
-                  <span className="font-bold text-[#202622]">
-                    Description:
-                  </span>{" "}
-                  {selectedProduct.description}
-                </p>
+                  {selectedProduct.category}
+                </span>
+
+                <img
+                  src={selectedProduct.image}
+                  alt={selectedProduct.name}
+                  className="
+                    h-[94%]
+                    w-[94%]
+                    object-contain
+                    p-2
+                    drop-shadow-[0_14px_20px_rgba(25,42,34,0.12)]
+                    transition-transform
+                    duration-500
+                    group-hover/image:scale-[1.05]
+                  "
+                />
+              </div>
+
+              {/* PRODUCT TITLE */}
+
+              <div className="mt-4 border-b border-[#E3E6E4] pb-4">
+                <span className="text-[10px] font-bold uppercase tracking-[0.13em] text-orange-600">
+                  Mutation Dermacare
+                </span>
+
+                <h3 className="mt-1 text-[21px] font-bold leading-[1.3] text-[#17251F] sm:text-[24px]">
+                  {selectedProduct.name}
+                </h3>
+              </div>
+
+              {/* =================================================
+                  PRODUCT INFORMATION
+              ================================================= */}
+
+              <div className="mt-5">
+                <SectionHeading>Product Information</SectionHeading>
+
+                <div className="mt-3 overflow-hidden rounded-[9px] border border-[#E1E5E2] bg-white">
+                  {selectedProduct.specs.map(([label, value], index) => (
+                    <div
+                      key={`${label}-${index}`}
+                      className={`
+                        grid
+                        grid-cols-[38%_62%]
+                        gap-3
+                        px-3
+                        py-[8px]
+                        sm:grid-cols-[32%_68%]
+                        sm:px-4
+                        ${
+                          index !== selectedProduct.specs.length - 1
+                            ? "border-b border-[#EAEBEA]"
+                            : ""
+                        }
+                      `}
+                    >
+                      <span className="text-[13px] font-semibold leading-[1.55] text-[#59635E] sm:text-[14px]">
+                        {label}
+                      </span>
+
+                      <span className="pr-2 text-[13px] font-semibold leading-[1.55] text-[#252C28] sm:text-[14px]">
+                        {value}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               {/* =================================================
                   KEY FEATURES
               ================================================= */}
 
-              <div className="mt-3">
-                <h3
-                  className="
-                    text-[14px]
-                    font-bold
-                    leading-[1.5]
-                    text-[#202622]
-                    sm:text-[15px]
-                  "
-                >
-                  Key Features:
-                </h3>
+              <div className="mt-5 border-t border-[#E4E7E5] pt-4">
+                <SectionHeading>Key Features</SectionHeading>
 
-                <div className="mt-[2px]">
-                  {selectedProduct.features.map((item) => (
-                    <p
-                      key={item}
+                <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                  {selectedProduct.features.map((feature) => (
+                    <div
+                      key={feature}
                       className="
-                        text-[14px]
-                        font-medium
-                        leading-[1.5]
-                        text-[#3D4541]
-                        sm:text-[15px]
+                        flex
+                        items-start
+                        gap-2.5
+                        rounded-[7px]
+                        border
+                        border-[#E4E8E5]
+                        bg-[#FAFBFA]
+                        px-3
+                        py-2.5
                       "
                     >
-                      - {item}
-                    </p>
+                      <span className="mt-[1px] flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full bg-[#E4F0EB] text-[#438D76]">
+                        <Check size={11} strokeWidth={3} />
+                      </span>
+
+                      <span className="text-[13px] font-medium leading-[1.55] text-[#3F4944] sm:text-[14px]">
+                        {feature}
+                      </span>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -852,153 +762,157 @@ const ProductsSection = () => {
                   BENEFITS
               ================================================= */}
 
-              <div className="mt-3">
-                <h3
-                  className="
-                    text-[14px]
-                    font-bold
-                    leading-[1.5]
-                    text-[#202622]
-                    sm:text-[15px]
-                  "
-                >
-                  Benefits:
-                </h3>
+              <div className="mt-5 border-t border-[#E4E7E5] pt-4">
+                <SectionHeading>Benefits</SectionHeading>
 
-                <div className="mt-[2px]">
-                  {selectedProduct.benefits.map((item) => (
-                    <p
-                      key={item}
-                      className="
-                        text-[14px]
-                        font-medium
-                        leading-[1.5]
-                        text-[#3D4541]
-                        sm:text-[15px]
-                      "
+                <div className="mt-3 space-y-2">
+                  {selectedProduct.benefits.map((benefit, index) => (
+                    <div
+                      key={benefit}
+                      className="flex items-start gap-3"
                     >
-                      - {item}
-                    </p>
+                      <span
+                        className="
+                          flex
+                          h-[23px]
+                          w-[23px]
+                          shrink-0
+                          items-center
+                          justify-center
+                          rounded-[5px]
+                          bg-[#FFF1E7]
+                          text-[10px]
+                          font-bold
+                          text-orange-600
+                        "
+                      >
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+
+                      <p className="pt-[1px] text-[13px] font-medium leading-[1.6] text-[#414B46] sm:text-[14px]">
+                        {benefit}
+                      </p>
+                    </div>
                   ))}
                 </div>
               </div>
 
               {/* =================================================
-                  INGREDIENTS
+                  PRODUCT ENQUIRY
               ================================================= */}
 
-              <p
+              <div
                 className="
-                  mt-3
-                  text-[14px]
-                  font-medium
-                  leading-[1.55]
-                  text-[#3D4541]
-                  sm:text-[15px]
+                  mt-5
+                  rounded-[10px]
+                  border
+                  border-[#E1E5E2]
+                  bg-[#F7F8F6]
+                  p-3
+                  sm:p-4
                 "
               >
-                <span className="font-bold text-[#202622]">
-                  Ingredients:
-                </span>{" "}
-                {selectedProduct.ingredients}
-              </p>
+                <span className="text-[10px] font-bold uppercase tracking-[0.12em] text-orange-600">
+                  Product Enquiry
+                </span>
 
-              {/* =================================================
-                  CERTIFICATIONS
-              ================================================= */}
+                <p className="mt-1 text-[13px] font-medium leading-[1.55] text-[#4F5A54] sm:text-[14px]">
+                  Contact our team for more information about{" "}
+                  <span className="font-bold text-[#202622]">
+                    {selectedProduct.name}
+                  </span>
+                  .
+                </p>
 
-              <p
-                className="
-                  mt-1
-                  text-[14px]
-                  font-medium
-                  leading-[1.55]
-                  text-[#3D4541]
-                  sm:text-[15px]
-                "
-              >
-                <span className="font-bold text-[#202622]">
-                  Certifications:
-                </span>{" "}
-                {selectedProduct.certifications}
-              </p>
+                <div className="mt-3 grid grid-cols-2 gap-2.5">
+                  {/* WHATSAPP */}
 
-              {/* =================================================
-                  WHATSAPP + CALL NOW
-              ================================================= */}
+                  <a
+                    href={getWhatsAppLink()}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="
+                      inline-flex
+                      min-h-[48px]
+                      items-center
+                      justify-center
+                      gap-2
+                      rounded-[7px]
+                      border
+                      border-[#159A62]
+                      bg-white
+                      px-3
+                      text-[13px]
+                      font-bold
+                      text-[#128A58]
+                      transition-all
+                      duration-300
+                      hover:bg-[#F0FBF6]
+                      sm:text-[14px]
+                    "
+                  >
+                    <MessageCircle
+                      size={18}
+                      strokeWidth={2.3}
+                      className="shrink-0"
+                    />
 
-              <div className="mt-4 grid grid-cols-2 gap-2.5">
-                {/* WHATSAPP */}
+                    <span>WhatsApp</span>
+                  </a>
 
-                <a
-                  href={getWhatsAppLink()}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="
-                    inline-flex
-                    min-h-[48px]
-                    items-center
-                    justify-center
-                    gap-2
-                    rounded-[7px]
-                    border
-                    border-[#159A62]
-                    bg-white
-                    px-3
-                    text-[13px]
-                    font-bold
-                    text-[#128A58]
-                    transition-all
-                    duration-300
-                    hover:bg-[#F0FBF6]
-                    sm:text-[14px]
-                  "
-                >
-                  <MessageCircle
-                    size={18}
-                    strokeWidth={2.3}
-                    className="shrink-0"
-                  />
+                  {/* CALL */}
 
-                  <span>WhatsApp</span>
-                </a>
+                  <a
+                    href="tel:+919921269023"
+                    className="
+                      inline-flex
+                      min-h-[48px]
+                      items-center
+                      justify-center
+                      gap-2
+                      rounded-[7px]
+                      bg-[#438D76]
+                      px-3
+                      text-[13px]
+                      font-bold
+                      text-white
+                      transition-all
+                      duration-300
+                      hover:bg-[#34735F]
+                      sm:text-[14px]
+                    "
+                  >
+                    <Phone
+                      size={17}
+                      strokeWidth={2.4}
+                      className="shrink-0"
+                    />
 
-                {/* CALL */}
-
-                <a
-                  href="tel:+919921269023"
-                  className="
-                    inline-flex
-                    min-h-[48px]
-                    items-center
-                    justify-center
-                    gap-2
-                    rounded-[7px]
-                    bg-[#438D76]
-                    px-3
-                    text-[13px]
-                    font-bold
-                    text-white
-                    transition-all
-                    duration-300
-                    hover:bg-[#34735F]
-                    sm:text-[14px]
-                  "
-                >
-                  <Phone
-                    size={17}
-                    strokeWidth={2.4}
-                    className="shrink-0"
-                  />
-
-                  <span>Call Now</span>
-                </a>
+                    <span>Call Now</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       )}
     </>
+  );
+};
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+const SectionHeading = ({ children }) => {
+  return (
+    <div className="flex items-center gap-2.5">
+      <span className="h-[18px] w-[3px] rounded-full bg-orange-500" />
+
+      <h3 className="text-[15px] font-bold leading-[1.4] text-[#17251F] sm:text-[16px]">
+        {children}
+      </h3>
+    </div>
   );
 };
 
