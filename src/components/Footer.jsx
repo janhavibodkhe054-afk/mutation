@@ -19,7 +19,7 @@ const solutionLinks = [
   { label: "Personal Skin Care Products", path: "/products" },
   { label: "Hotel Amenities", path: "/hotel-amenities" },
   { label: "Travel Care Kits", path: "/travel-care-kits" },
-  
+  { label: "Parlour & Salon", path: "/parlour-salon" },
   { label: "Private Label", path: "/private-label" },
   
 ];
