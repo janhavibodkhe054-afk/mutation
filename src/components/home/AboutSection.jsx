@@ -12,7 +12,7 @@ const coreSolutions = [
   {
     icon: Sparkles,
     number: "01",
-    title: "Personal Care",
+    title: "Personal Skin Care",
     text: "Everyday care products",
   },
   {
@@ -196,7 +196,7 @@ const AboutSection = () => {
                 <span className="about-dot h-[6px] w-[6px] rounded-full bg-[#438D76]" />
 
                 <span className="text-[8px] font-bold uppercase tracking-[0.15em] text-[#34483F]">
-                  Personal Care Solutions
+                  Personal Skin Care Solutions
                 </span>
               </div>
 
@@ -323,13 +323,13 @@ const AboutSection = () => {
             {/* DESCRIPTION */}
             <div className="mt-5 max-w-[680px] space-y-3">
               <p className="text-[15px] font-medium leading-[1.75] text-[#56635D] lg:text-[16px]">
-                Mutation Dermacare is a personal care and B2B solutions
+                Mutation Dermacare is a personal skin care and B2B solutions
                 company focused on delivering quality products for everyday
                 consumers, hospitality businesses, brands and organisations.
               </p>
 
               <p className="text-[15px] font-medium leading-[1.75] text-[#56635D] lg:text-[16px]">
-                From personal care essentials to hotel amenities, travel care
+                From personal skin care essentials to hotel amenities, travel care
                 kits and private label manufacturing, we help businesses find
                 practical and reliable solutions under one roof.
               </p>

@@ -152,7 +152,7 @@ const BulkOrdersSection = () => {
               md:text-[16px]
             "
           >
-            Looking for personal care products, hotel amenities or travel care
+            Looking for personal skin care products, hotel amenities or travel care
             solutions in bulk? Mutation Dermacare supports business requirements
             with dependable product options, custom solutions and bulk supply.
           </p>

@@ -192,7 +192,7 @@ const ProductsHero = () => {
                   sm:text-[12px]
                 "
               >
-                Our Personal Care Products
+                Our Personal Skin Care Products
               </span>
             </div>
 
@@ -231,7 +231,7 @@ const ProductsHero = () => {
                 lg:text-[17px]
               "
             >
-              Explore personal care products developed for everyday skincare,
+              Explore personal skin care products developed for everyday skincare,
               haircare, bath and hygiene requirements.
             </p>
 
@@ -453,7 +453,7 @@ const ProductsHero = () => {
                   text-orange-300
                 "
               >
-                Personal Care
+                Personal Skin Care
               </span>
 
               <p
@@ -502,7 +502,7 @@ const ProductsHero = () => {
               text-[#C9D7D0]
             "
           >
-            Personal Care
+            Personal Skin Care
           </span>
 
           <div className="relative h-px flex-1 overflow-hidden bg-white/15">

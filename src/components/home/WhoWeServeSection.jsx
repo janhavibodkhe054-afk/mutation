@@ -22,7 +22,7 @@ const businesses = [
     icon: Plane,
     title: "Travel Companies",
     description:
-      "Travel-friendly personal care kits designed for tours and journeys.",
+      "Travel-friendly personal skin care kits designed for tours and journeys.",
     tone: "orange",
   },
   {
@@ -30,7 +30,7 @@ const businesses = [
     icon: Sparkles,
     title: "Cosmetic Brands",
     description:
-      "Private label and custom product solutions for skincare and personal care brands.",
+      "Private label and custom product solutions for skincare and personal skin care brands.",
     tone: "orange",
   },
   {
@@ -54,7 +54,7 @@ const businesses = [
     icon: Building2,
     title: "Corporate Businesses",
     description:
-      "Customised personal care solutions for organisational requirements.",
+      "Customised personal skin care solutions for organisational requirements.",
     tone: "orange",
   },
 ];

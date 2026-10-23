@@ -42,7 +42,7 @@ const HeroSection = () => {
                   sm:text-[11px]
                 "
               >
-                Personal Care • Hospitality • Private Label
+                Personal Skin Care • Hospitality • Private Label
               </p>
             </div>
 
@@ -83,7 +83,7 @@ const HeroSection = () => {
                 xl:text-[17px]
               "
             >
-              From everyday personal care to hotel amenities, travel kits and
+              From everyday personal skin care to hotel amenities, travel kits and
               private label manufacturing, Mutation Dermacare delivers
               dependable solutions for consumers, brands and businesses.
             </p>

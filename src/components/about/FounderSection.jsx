@@ -117,13 +117,13 @@ const FounderSection = () => {
             {/* Image */}
             <div className="group overflow-hidden rounded-[20px] bg-[#F4F1ED]">
               <img
-                src="/founder-deepali.jpg"
+                src="/deepali.webp"
                 alt="Dr. Deepali Nagesh Hingmire"
                 className="
                   founder-animation
                   h-[440px]
                   w-full
-                  object-cover
+                  object-contain
                   object-top
                   sm:h-[520px]
                   lg:h-[590px]
@@ -264,7 +264,7 @@ const FounderSection = () => {
             {/* Description */}
             <p className="mt-7 max-w-[690px] text-[15px] leading-[1.9] text-[#59625D] sm:text-[16px]">
               With a strong focus on quality, innovation and long-term
-              partnerships, we help businesses turn their personal care ideas
+              partnerships, we help businesses turn their personal skin care ideas
               into products that are ready to build a brand around.
             </p>
 

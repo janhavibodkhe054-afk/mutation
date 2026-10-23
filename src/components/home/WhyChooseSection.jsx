@@ -14,7 +14,7 @@ const reasons = [
     icon: Layers3,
     title: "Wide Product Range",
     description:
-      "A diverse range of personal care products for everyday and business requirements.",
+      "A diverse range of personal skin care products for everyday and business requirements.",
   },
   {
     no: "02",
@@ -312,7 +312,7 @@ const WhyChooseSection = () => {
           <span className="h-px w-[55px] bg-[#BCC7C1]" />
 
           <span className="text-[9px] font-bold uppercase tracking-[0.18em] text-[#647069]">
-            Personal Care
+            Personal Skin Care
           </span>
 
           <span className="h-[5px] w-[5px] rounded-full bg-orange-500" />

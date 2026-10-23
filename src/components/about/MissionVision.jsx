@@ -195,7 +195,7 @@ const MissionVision = () => {
 
                 {/* Description */}
                 <p className="mt-4 max-w-[650px] text-[15px] leading-[1.8] text-[#56605B] sm:text-[16px]">
-                  Our mission is to provide quality personal care products and
+                  Our mission is to provide quality personal skin care products and
                   dependable business solutions that meet the evolving needs of
                   consumers, brands and businesses.
                 </p>

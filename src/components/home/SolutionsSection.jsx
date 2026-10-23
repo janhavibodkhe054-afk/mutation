@@ -5,10 +5,10 @@ import { ArrowRight } from "lucide-react";
 const solutions = [
   {
     number: "01",
-    title: "Personal Care",
+    title: "Personal Skin Care",
     subtitle: "Skincare, Haircare & Bath Care",
     description:
-      "Everyday cleansing, hydration and personal care solutions.",
+      "Everyday cleansing, hydration and personal skin care solutions.",
     image: "/personal-care.png",
     cta: "Explore Products",
     link: "/products",
@@ -126,7 +126,7 @@ const SolutionsSection = () => {
               lg:text-[16px]
             "
           >
-            Everyday personal care, hospitality amenities, travel essentials,
+            Everyday personal skin care, hospitality amenities, travel essentials,
             and custom private label manufacturing.
           </p>
 

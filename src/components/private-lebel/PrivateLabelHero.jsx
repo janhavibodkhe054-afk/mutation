@@ -241,7 +241,7 @@ const PrivateLabelHero = () => {
             "
           >
             <img
-              src="/private-label.webp"
+              src="/private-label-hero.png"
               alt="Private label cosmetic products and packaging"
               className="h-full w-full object-cover"
             />

@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const WhyChooseUs = () => {
@@ -5,7 +6,9 @@ const WhyChooseUs = () => {
     "Wide Product Range",
     "B2B & Bulk Order Support",
     "Hotel Amenities Solutions",
+    "Parlour & Salon Solutions",
     "Private Label Manufacturing",
+    "Export Solutions",
     "Custom Packaging",
     "Custom Branding",
     "Reliable Supply",
@@ -60,7 +63,7 @@ const WhyChooseUs = () => {
         }
       `}</style>
 
-      {/* ================= BACKGROUND DETAILS ================= */}
+      {/* BACKGROUND DETAILS */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 overflow-hidden"
@@ -77,38 +80,19 @@ const WhyChooseUs = () => {
         <div className="absolute bottom-0 left-[46%] h-[80px] w-px bg-gradient-to-t from-orange-500/35 to-transparent" />
       </div>
 
-      {/* ================= MAIN ================= */}
+      {/* MAIN */}
       <div className="relative mx-auto max-w-[1380px] px-5 py-12 sm:px-7 sm:py-14 lg:px-10 lg:py-16 xl:px-14">
         <div className="grid items-center gap-9 lg:grid-cols-[0.88fr_1.12fr] lg:gap-14 xl:gap-[72px]">
 
-          {/* ==================================================
-              LEFT IMAGE COMPOSITION
-          ================================================== */}
+          {/* LEFT IMAGE */}
           <div className="relative">
-            {/* Orange top detail */}
             <div className="absolute -top-[10px] left-[28px] z-20 h-[4px] w-[82px] bg-orange-500" />
 
-            {/* Main Image */}
-            <div
-              className="
-                relative
-                h-[390px]
-                overflow-hidden
-                rounded-tr-[80px]
-                sm:h-[460px]
-                lg:h-[520px]
-                lg:rounded-tr-[120px]
-              "
-            >
+            <div className="relative h-[390px] overflow-hidden rounded-tr-[80px] sm:h-[460px] lg:h-[520px] lg:rounded-tr-[120px]">
               <img
                 src="/beauty.webp"
                 alt="Mutation Dermacare personal care solutions"
-                className="
-                  why-motion
-                  h-full
-                  w-full
-                  object-cover
-                "
+                className="why-motion h-full w-full object-cover"
                 style={{
                   animation: "imageBreath 12s ease-in-out infinite",
                 }}
@@ -116,7 +100,6 @@ const WhyChooseUs = () => {
 
               <div className="absolute inset-0 bg-gradient-to-t from-[#162A23]/55 via-transparent to-transparent" />
 
-              {/* Image Bottom Label */}
               <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-5 p-5 sm:p-7">
                 <div>
                   <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-orange-300">
@@ -137,26 +120,10 @@ const WhyChooseUs = () => {
               </div>
             </div>
 
-            {/* Floating side marker */}
-            <div
-              className="
-                absolute
-                -bottom-5
-                right-0
-                z-20
-                flex
-                items-center
-                gap-4
-                bg-[#438D76]
-                px-5
-                py-4
-                text-white
-                sm:right-[-18px]
-                sm:px-6
-              "
-            >
+            {/* UPDATED STRENGTH COUNT */}
+            <div className="absolute -bottom-5 right-0 z-20 flex items-center gap-4 bg-[#438D76] px-5 py-4 text-white sm:right-[-18px] sm:px-6">
               <span className="text-[31px] font-bold leading-none">
-                08
+                {String(reasons.length).padStart(2, "0")}
               </span>
 
               <span className="h-[30px] w-px bg-white/30" />
@@ -169,12 +136,10 @@ const WhyChooseUs = () => {
             </div>
           </div>
 
-          {/* ==================================================
-              RIGHT CONTENT
-          ================================================== */}
+          {/* RIGHT CONTENT */}
           <div className="lg:py-2">
 
-            {/* Eyebrow */}
+            {/* EYEBROW */}
             <div className="flex items-center gap-3">
               <span className="h-[7px] w-[7px] rounded-full bg-orange-500" />
 
@@ -184,14 +149,7 @@ const WhyChooseUs = () => {
 
               <div className="relative h-px w-[55px] overflow-hidden bg-[#AEBAB4]">
                 <span
-                  className="
-                    why-motion
-                    absolute
-                    inset-y-0
-                    left-0
-                    w-[18px]
-                    bg-[#438D76]
-                  "
+                  className="why-motion absolute inset-y-0 left-0 w-[18px] bg-[#438D76]"
                   style={{
                     animation: "accentMove 3.5s linear infinite",
                   }}
@@ -199,188 +157,79 @@ const WhyChooseUs = () => {
               </div>
             </div>
 
-            {/* Heading */}
-            <h2
-              className="
-                mt-5
-                max-w-[650px]
-                text-[35px]
-                font-bold
-                leading-[1.07]
-                tracking-[-0.04em]
-                text-[#19251F]
-                sm:text-[41px]
-                md:text-[45px]
-                lg:text-[48px]
-              "
-            >
+            {/* HEADING */}
+            <h2 className="mt-5 max-w-[650px] text-[35px] font-bold leading-[1.07] tracking-[-0.04em] text-[#19251F] sm:text-[41px] md:text-[45px] lg:text-[48px]">
               Why Mutation{" "}
               <span className="text-[#438D76]">
                 Dermacare?
               </span>
             </h2>
 
-            {/* Small accent */}
             <div className="mt-5 flex items-center gap-3">
               <span className="h-[3px] w-[52px] bg-orange-500" />
 
               <span
-                className="
-                  why-motion
-                  h-[6px]
-                  w-[6px]
-                  rounded-full
-                  bg-[#438D76]
-                "
+                className="why-motion h-[6px] w-[6px] rounded-full bg-[#438D76]"
                 style={{
                   animation: "dotPulse 2.4s ease-in-out infinite",
                 }}
               />
             </div>
 
-            {/* ================================================
-                REASONS
-            ================================================= */}
+            {/* 10 CORE STRENGTHS */}
             <div className="mt-7 grid sm:grid-cols-2 sm:gap-x-9">
               {reasons.map((reason, index) => (
                 <div
                   key={reason}
-                  className="
-                    group
-                    relative
-                    flex
-                    min-h-[70px]
-                    items-center
-                    gap-4
-                    border-b
-                    border-[#C5CFCA]
-                  "
+                  className="group relative flex min-h-[70px] items-center gap-4 border-b border-[#C5CFCA]"
                 >
-                  {/* Number */}
-                  <span
-                    className="
-                      w-[28px]
-                      shrink-0
-                      text-[10px]
-                      font-bold
-                      tracking-[0.14em]
-                      text-orange-600
-                    "
-                  >
+                  <span className="w-[28px] shrink-0 text-[10px] font-bold tracking-[0.14em] text-orange-600">
                     {String(index + 1).padStart(2, "0")}
                   </span>
 
-                  {/* Vertical Accent */}
-                  <span
-                    className="
-                      h-[22px]
-                      w-[2px]
-                      shrink-0
-                      bg-[#AABAB2]
-                      transition-all
-                      duration-300
-                      group-hover:h-[36px]
-                      group-hover:bg-orange-500
-                    "
-                  />
+                  <span className="h-[22px] w-[2px] shrink-0 bg-[#AABAB2] transition-all duration-300 group-hover:h-[36px] group-hover:bg-orange-500" />
 
-                  {/* Text */}
-                  <h3
-                    className="
-                      flex-1
-                      py-4
-                      text-[15px]
-                      font-bold
-                      leading-[1.4]
-                      text-[#293630]
-                      transition-all
-                      duration-300
-                      group-hover:translate-x-[4px]
-                      group-hover:text-[#438D76]
-                      sm:text-[16px]
-                      lg:text-[17px]
-                    "
-                  >
+                  <h3 className="flex-1 py-4 text-[15px] font-bold leading-[1.4] text-[#293630] transition-all duration-300 group-hover:translate-x-[4px] group-hover:text-[#438D76] sm:text-[16px] lg:text-[17px]">
                     {reason}
                   </h3>
 
-                  {/* End Detail */}
                   <div className="flex shrink-0 items-center">
-                    <span
-                      className="
-                        h-[5px]
-                        w-[5px]
-                        rounded-full
-                        bg-[#438D76]
-                        transition-colors
-                        duration-300
-                        group-hover:bg-orange-500
-                      "
-                    />
+                    <span className="h-[5px] w-[5px] rounded-full bg-[#438D76] transition-colors duration-300 group-hover:bg-orange-500" />
 
-                    <span
-                      className="
-                        ml-2
-                        h-px
-                        w-[12px]
-                        bg-[#9DAAA4]
-                        transition-all
-                        duration-500
-                        group-hover:w-[28px]
-                        group-hover:bg-orange-500
-                      "
-                    />
+                    <span className="ml-2 h-px w-[12px] bg-[#9DAAA4] transition-all duration-500 group-hover:w-[28px] group-hover:bg-orange-500" />
                   </div>
 
-                  {/* Hover Underline */}
-                  <span
-                    className="
-                      absolute
-                      bottom-[-1px]
-                      left-0
-                      h-[2px]
-                      w-0
-                      bg-orange-500
-                      transition-all
-                      duration-500
-                      group-hover:w-full
-                    "
-                  />
+                  <span className="absolute bottom-[-1px] left-0 h-[2px] w-0 bg-orange-500 transition-all duration-500 group-hover:w-full" />
                 </div>
               ))}
             </div>
 
-            {/* ================================================
-                FOOT NOTE
-            ================================================= */}
-            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2">
-              <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#5E6C65]">
-                Personal Care
-              </span>
+            {/* FOOT NOTE */}
+            <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
+              {[
+                "Personal Skin Care",
+                "Hospitality",
+                "Parlour & Salon",
+                "Private Label",
+                "B2B",
+                "Export",
+              ].map((item, index) => (
+                <React.Fragment key={item}>
+                  {index > 0 && (
+                    <span className="h-[4px] w-[4px] rounded-full bg-orange-500" />
+                  )}
 
-              <span className="h-[4px] w-[4px] rounded-full bg-orange-500" />
-
-              <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#5E6C65]">
-                Hospitality
-              </span>
-
-              <span className="h-[4px] w-[4px] rounded-full bg-orange-500" />
-
-              <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#5E6C65]">
-                Private Label
-              </span>
-
-              <span className="h-[4px] w-[4px] rounded-full bg-orange-500" />
-
-              <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#5E6C65]">
-                B2B
-              </span>
+                  <span className="text-[10px] font-bold uppercase tracking-[0.13em] text-[#5E6C65]">
+                    {item}
+                  </span>
+                </React.Fragment>
+              ))}
             </div>
           </div>
         </div>
       </div>
 
-      {/* ================= BOTTOM BRAND ACCENT ================= */}
+      {/* BOTTOM BRAND ACCENT */}
       <div className="flex h-[4px]">
         <span className="w-[17%] bg-orange-500" />
         <span className="flex-1 bg-[#438D76]" />

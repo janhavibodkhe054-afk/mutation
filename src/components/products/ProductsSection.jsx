@@ -33,7 +33,7 @@ const products = [
       ["Fragrance", "No"],
       [
         "Key Ingredients",
-        "Aamalaki, Kusath, Kumari, Kuwath, Bhringraj Kuwath",
+        "Aamalaki, Kwath, Kumari Kwath, Bhringraj Kwath",
       ],
       ["Shelf Life", "24 Months"],
       ["Storage", "Store in Cool & Dry Place"],
@@ -91,7 +91,7 @@ const products = [
     ],
 
     benefits: [
-      "Supports everyday personal care",
+      "Supports everyday personal skin care",
       "Helps maintain a fresh skin feel",
       "Easy to include in a regular hygiene routine",
       "Convenient powder format for everyday use",
@@ -118,7 +118,7 @@ const products = [
       ["Fragrance", "No"],
       [
         "Key Ingredients",
-        "Saffron Hydrosol, Niacinamide, Hyaluronic Acid, Kojic Acid, Glycerine, EDTA, Carbopol 940, DMDM, DW, TEA",
+        "Saffron Hydrosol, Niacinamide, Hyaluronic Acid, Kojic Acid, Glycerine",
       ],
       ["Form", "Gel"],
       ["Shelf Life", "24 Months"],
@@ -222,48 +222,52 @@ const products = [
       "Supports everyday skin cleansing",
       "Helps maintain a moisturised skin feel",
       "Convenient for regular bath care",
-      "Suitable for everyday personal care routines",
+      "Suitable for everyday personal skin care routines",
     ],
   },
 
   /* =======================================================
      6. NEEM BATHING BAR
   ======================================================= */
-  {
-    id: 6,
-    name: "Neem Bathing Bar",
-    category: "Bath Care",
-    badge: "New",
+  
+{
+  id: 6,
+  name: "Neem Bathing Bar",
+  category: "Personal Skin Care",
+  badge: "New",
 
-    image: "/neem-soap.jpeg",
+  image: "/neem-soap.jpeg",
 
-    specs: [
-      ["Brand Name", "Mutation Dermacare"],
-      ["Product Name", "Neem Bathing Bar"],
-      ["Pack Size", "100 g"],
-      ["Skin Type", "All"],
-      ["Age Group", "Above 20 Years"],
-      ["Fragrance", "No"],
-      ["Key Ingredients", "Neem, Camphor, Rosemary"],
-      ["Shelf Life", "36 Months"],
-      ["Country of Origin", "India"],
-    ],
+  specs: [
+    ["Brand Name", "Mutation Dermacare"],
+    ["Product Name", "Neem Bathing Bar"],
+    ["Product Category", "Personal Skin Care – Bath Care"],
+    ["Pack Size", "100 g"],
+    ["Skin Type", "All"],
+    ["Age Group", "Above 20 Years"],
+    ["Fragrance", "No"],
+    ["Key Ingredients", "Neem, Camphor, Rosemary"],
+    ["Shelf Life", "36 Months"],
+    ["Country of Origin", "India"],
+  ],
 
-    features: [
-      "Neem-based bathing bar",
-      "Contains Neem, Camphor and Rosemary",
-      "Suitable for all skin types",
-      "Designed for everyday cleansing",
-      "Fragrance-free",
-    ],
+  features: [
+    "Personal skin care bathing bar",
+    "Neem-based bathing bar",
+    "Contains Neem, Camphor and Rosemary",
+    "Suitable for all skin types",
+    "Designed for everyday cleansing",
+    "Fragrance-free",
+  ],
 
-    benefits: [
-      "Supports regular skin cleansing",
-      "Suitable for everyday bath care",
-      "Convenient for regular personal care",
-      "Neem-based option for daily cleansing routines",
-    ],
-  },
+  benefits: [
+    "Supports regular skin cleansing",
+    "Suitable for everyday personal skin care",
+    "Convenient for regular personal care",
+    "Neem-based option for daily cleansing routines",
+  ],
+},
+
 
   /* =======================================================
      7. SAFFRON RADIANCE FACE WASH
@@ -436,12 +440,12 @@ const ProductsSection = () => {
             </div>
 
             <h2 className="mt-3 text-[31px] font-bold leading-[1.1] tracking-[-0.035em] text-[#17251F] sm:text-[38px] lg:text-[42px]">
-              Personal Care
+              Personal Skin Care
               <span className="text-[#438D76]"> Products</span>
             </h2>
 
             <p className="mt-3 max-w-[650px] text-[15px] font-medium leading-[1.7] text-[#505C56] sm:text-[16px]">
-              Explore our personal care range for everyday skincare, haircare,
+              Explore our personal skin care range for everyday skincare, haircare,
               bath and hygiene requirements.
             </p>
           </div>

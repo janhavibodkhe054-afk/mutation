@@ -7,6 +7,7 @@ import HotelAmenitiesSection from '../components/home/HotelAmenitiesSection'
 import BulkOrdersSection from '../components/home/BulkOrdersSection'
 import WhoWeServeSection from '../components/home/WhoWeServeSection'
 import WhyChooseSection from '../components/home/WhyChooseSection'
+import HomeExportSection from '../components/home/HomeExportSection'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <PersonalCareSection/>
       <BulkOrdersSection/>
       <HotelAmenitiesSection/>
+      <HomeExportSection/>
       <WhoWeServeSection/>
       <WhyChooseSection/>
     </div>

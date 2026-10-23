@@ -14,6 +14,7 @@ import HotelAmenities from "./pages/HotelAmenities";
 import TravelCareKit from "./pages/TravelCareKit";
 import PrivateLabel from "./pages/PrivateLabel";
 import Product from "./pages/Product";
+import Parlour from "./pages/Parlour";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/travel-care-kits" element={<TravelCareKit />} />
         <Route path="/private-label" element={<PrivateLabel />} />
         <Route path="/products" element={<Product />} />
+        <Route path="/parlour-salon" element={<Parlour />} />
       </Routes>
 
       <Footer />

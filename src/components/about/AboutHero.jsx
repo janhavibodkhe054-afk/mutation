@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const AboutHero = () => {
@@ -10,7 +11,6 @@ const AboutHero = () => {
         items-center
         overflow-hidden
         bg-cover
-        bg-center
         bg-no-repeat
         sm:min-h-[340px]
         lg:min-h-[390px]
@@ -19,6 +19,29 @@ const AboutHero = () => {
         backgroundImage: "url('/about-hero.png')",
       }}
     >
+      {/* Mobile: show more of the right side of the image */}
+      <style>
+        {`
+          .about-hero-bg {
+            background-position: 70% center;
+          }
+
+          @media (min-width: 640px) {
+            .about-hero-bg {
+              background-position: center center;
+            }
+          }
+        `}
+      </style>
+
+      {/* Background image */}
+      <div
+        className="about-hero-bg absolute inset-0 bg-cover bg-no-repeat"
+        style={{
+          backgroundImage: "url('/about-hero.png')",
+        }}
+      />
+
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/45" />
 
@@ -60,7 +83,7 @@ const AboutHero = () => {
               lg:text-[17px]
             "
           >
-            Delivering quality personal care products and dependable solutions
+            Delivering quality personal skin care products and dependable solutions
             for consumers, brands and businesses.
           </p>
         </div>

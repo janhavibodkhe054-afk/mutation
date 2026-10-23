@@ -4,8 +4,8 @@ const WhoWeAre = () => {
   const solutions = [
     {
       no: "01",
-      title: "Personal Care",
-      text: "Everyday personal care essentials.",
+      title: "Personal Skin Care",
+      text: "Everyday personal skin care essentials.",
     },
     {
       no: "02",
@@ -188,13 +188,13 @@ const WhoWeAre = () => {
 
             {/* Description */}
             <p className="mt-6 max-w-[650px] text-[16px] font-medium leading-[1.75] text-[#37413C] sm:text-[17px]">
-              Mutation Dermacare is a personal care and B2B solutions company
+              Mutation Dermacare is a personal Skin care and B2B solutions company
               focused on delivering quality products for everyday consumers,
               hospitality businesses, brands and organisations.
             </p>
 
             <p className="mt-4 max-w-[650px] text-[15px] leading-[1.8] text-[#59625D] sm:text-[16px]">
-              From personal care essentials to hotel amenities, travel care
+              From personal Skin care essentials to hotel amenities, travel care
               kits and private label manufacturing, we help businesses find
               practical and reliable solutions under one roof.
             </p>
@@ -202,7 +202,7 @@ const WhoWeAre = () => {
             {/* Small Signature */}
             <div className="mt-6 flex flex-wrap items-center gap-3 border-t border-[#D9D5CE] pt-5">
               <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#438D76]">
-                Personal Care
+                Personal Skin Care
               </span>
 
               <span className="h-[4px] w-[4px] rounded-full bg-orange-500" />

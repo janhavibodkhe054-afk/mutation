@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const products = [
   { no: "01", name: "Anti Hairfall Shampoo", category: "Hair Care" },
-  { no: "02", name: "Dusting Powder", category: "Personal Care" },
+  { no: "02", name: "Dusting Powder", category: "Personal Skin Care" },
   { no: "03", name: "Fairness Face Gel", category: "Skin Care" },
   { no: "04", name: "Moisturising Cream", category: "Skin Care" },
   { no: "05", name: "Moisturising Soap", category: "Bath Care" },
@@ -43,7 +43,7 @@ const PersonalCareSection = () => {
             <span className="h-[7px] w-[7px] rounded-full bg-[#F07832]" />
 
             <p className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#C75D21]">
-              Personal Care Products
+              Personal Skin Care Products
             </p>
 
             <span className="h-px w-8 bg-[#AEBBB4]" />
@@ -54,7 +54,7 @@ const PersonalCareSection = () => {
           </h2>
 
           <p className="mx-auto mt-4 max-w-[670px] text-[15px] font-medium leading-[1.75] text-[#4F5B55] sm:text-[16px]">
-            A thoughtfully developed range of personal care essentials for
+            A thoughtfully developed range of personal skin care essentials for
             everyday skincare, haircare and bath care needs.
           </p>
         </div>
@@ -90,7 +90,7 @@ const PersonalCareSection = () => {
                   </p>
 
                   <h3 className="mt-1.5 text-[22px] font-extrabold tracking-[-0.025em] text-[#17251F] sm:text-[25px]">
-                    Personal Care Essentials
+                    Personal Skin Care Essentials
                   </h3>
                 </div>
 
