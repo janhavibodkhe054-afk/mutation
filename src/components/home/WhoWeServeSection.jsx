@@ -1,8 +1,9 @@
+
 import React from "react";
 import {
   Hotel,
   Plane,
-  Sparkles,
+  Scissors,
   Rocket,
   Network,
   Building2,
@@ -27,10 +28,10 @@ const businesses = [
   },
   {
     no: "03",
-    icon: Sparkles,
-    title: "Cosmetic Brands",
+    icon: Scissors,
+    title: "Parlour & Salons",
     description:
-      "Private label and custom product solutions for skincare and personal skin care brands.",
+      "Professional skincare, haircare and beauty care products for parlours, salons and beauty professionals.",
     tone: "orange",
   },
   {
@@ -115,9 +116,7 @@ const WhoWeServeSection = () => {
 
       <div className="relative mx-auto max-w-[1380px] px-5 py-14 sm:px-7 sm:py-16 lg:px-10 lg:py-20 xl:px-14">
 
-        {/* =====================================================
-            HEADER
-        ====================================================== */}
+        {/* HEADER */}
         <div className="grid gap-5 border-b border-[#CED7D2] pb-7 md:grid-cols-[0.8fr_1.2fr] md:items-end">
           <div>
             <div className="flex items-center gap-3">
@@ -137,12 +136,10 @@ const WhoWeServeSection = () => {
           </h2>
         </div>
 
-        {/* =====================================================
-            DESKTOP ECOSYSTEM
-        ====================================================== */}
+        {/* DESKTOP ECOSYSTEM */}
         <div className="relative mt-9 hidden lg:block">
 
-          {/* horizontal guides */}
+          {/* HORIZONTAL GUIDE */}
           <div className="absolute left-[9%] right-[9%] top-[50%] h-px bg-[#C9D2CD]" />
 
           <div className="grid grid-cols-[1fr_250px_1fr] gap-x-8 xl:grid-cols-[1fr_270px_1fr] xl:gap-x-12">
@@ -162,7 +159,7 @@ const WhoWeServeSection = () => {
             {/* CENTER HUB */}
             <div className="relative flex items-center justify-center">
 
-              {/* Vertical connector */}
+              {/* VERTICAL CONNECTOR */}
               <div className="absolute bottom-[8%] top-[8%] left-1/2 w-px -translate-x-1/2 bg-[#CBD4CF]" />
 
               <div
@@ -171,7 +168,7 @@ const WhoWeServeSection = () => {
                   animation: "hubFloat 5s ease-in-out infinite",
                 }}
               >
-                {/* outer fine ring */}
+                {/* OUTER RING */}
                 <span className="absolute -inset-[15px] rounded-full border border-dashed border-[#438D76]/30" />
 
                 <span className="absolute -left-[18px] top-1/2 h-[10px] w-[10px] -translate-y-1/2 rounded-full border-[3px] border-[#F8F5F0] bg-orange-500" />
@@ -212,9 +209,7 @@ const WhoWeServeSection = () => {
           </div>
         </div>
 
-        {/* =====================================================
-            MOBILE + TABLET
-        ====================================================== */}
+        {/* MOBILE + TABLET */}
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:hidden">
           {businesses.map((item) => {
             const Icon = item.icon;
@@ -265,14 +260,12 @@ const WhoWeServeSection = () => {
           })}
         </div>
 
-        {/* =====================================================
-            BOTTOM STRIP
-        ====================================================== */}
+        {/* BOTTOM STRIP */}
         <div className="mt-9 flex flex-wrap items-center justify-center gap-x-5 gap-y-3 border-t border-[#CED7D2] pt-6">
           {[
             "Hospitality",
             "Travel",
-            "Cosmetic Brands",
+            "Parlour & Salons",
             "Startups",
             "Distribution",
             "Corporate",
@@ -295,7 +288,7 @@ const WhoWeServeSection = () => {
           ))}
         </div>
 
-        {/* moving line */}
+        {/* MOVING LINE */}
         <div className="relative mx-auto mt-5 h-px max-w-[460px] overflow-hidden bg-[#D4DAD7]">
           <span
             className="serve-motion absolute inset-y-0 left-0 w-[65px] bg-orange-500"
@@ -308,7 +301,6 @@ const WhoWeServeSection = () => {
     </section>
   );
 };
-
 
 /* =========================================================
    DESKTOP BUSINESS ROW
@@ -404,36 +396,24 @@ const BusinessRow = ({ item, side, index }) => {
         </div>
       </div>
 
-      {/* connector edge */}
+      {/* CONNECTOR EDGE */}
       <span
         className={`
           absolute top-1/2 h-px w-[20px]
           -translate-y-1/2
           bg-[#AFC0B7]
-          ${
-            side === "left"
-              ? "-right-[20px]"
-              : "-left-[20px]"
-          }
+          ${side === "left" ? "-right-[20px]" : "-left-[20px]"}
         `}
       />
 
-      {/* bottom accent */}
+      {/* BOTTOM ACCENT */}
       <span
         className={`
           absolute bottom-0 h-[3px] w-0
           transition-all duration-500
           group-hover:w-[80px]
-          ${
-            side === "left"
-              ? "right-0"
-              : "left-0"
-          }
-          ${
-            isOrange
-              ? "bg-orange-500"
-              : "bg-[#438D76]"
-          }
+          ${side === "left" ? "right-0" : "left-0"}
+          ${isOrange ? "bg-orange-500" : "bg-[#438D76]"}
         `}
       />
     </div>

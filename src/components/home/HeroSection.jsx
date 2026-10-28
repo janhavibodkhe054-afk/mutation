@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -42,33 +43,30 @@ const HeroSection = () => {
                   sm:text-[11px]
                 "
               >
-                Personal Skin Care • Hospitality • Private Label
+                Personal Skin Care • Hospitality
               </p>
             </div>
 
             {/* MAIN HEADING */}
 
             <h1
-  className="
-    max-w-[650px]
-    text-[36px]
-    font-bold
-    leading-[1.10]
-    tracking-[-0.03em]
-    text-[#1D2D27]
-    sm:text-[42px]
-    md:text-[48px]
-    lg:text-[46px]
-    xl:text-[52px]
-    2xl:text-[56px]
-  "
->
-  Quality Care Products
- 
-    Trusted Business Solutions
- 
-  Built for Your Brand
-</h1>
+              className="
+                max-w-[650px]
+                text-[36px]
+                font-bold
+                leading-[1.10]
+                tracking-[-0.03em]
+                text-[#1D2D27]
+                sm:text-[42px]
+                md:text-[48px]
+                lg:text-[46px]
+                xl:text-[52px]
+                2xl:text-[56px]
+              "
+            >
+              Quality Care Products Trusted Business Solutions Built for Your
+              Needs
+            </h1>
 
             {/* DESCRIPTION */}
 
@@ -83,9 +81,10 @@ const HeroSection = () => {
                 xl:text-[17px]
               "
             >
-              From everyday personal skin care to hotel amenities, travel kits and
-              private label manufacturing, Mutation Dermacare delivers
-              dependable solutions for consumers, brands and businesses.
+              From everyday personal skincare to hotel amenities, travel care
+              kits, parlour & salon products, Mutation Dermacare delivers
+              dependable personal care solutions for consumers, beauty
+              professionals and businesses.
             </p>
 
             {/* BUTTONS */}
@@ -210,7 +209,7 @@ const HeroSection = () => {
               />
 
               {/* =====================
-                  SMALL BRAND LABEL
+                  SMALL LABEL
               ====================== */}
 
               <div

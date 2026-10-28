@@ -1,36 +1,46 @@
+
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import {
   ArrowUpRight,
-  ArrowRight,
   Globe2,
   PackageCheck,
-  Tags,
+  Building2,
   Boxes,
   MapPin,
   MessageCircleMore,
 } from "lucide-react";
 
+/* =========================================================
+   EXPORT HIGHLIGHTS
+========================================================= */
 
 const exportHighlights = [
   {
     icon: PackageCheck,
     title: "Export-Oriented Products",
-    description: "Skincare, haircare and hospitality essentials.",
+    description:
+      "Skincare, haircare and hospitality essentials.",
   },
   {
-    icon: Tags,
-    title: "Private Label Solutions",
-    description: "Custom branding and packaging options.",
+    icon: Building2,
+    title: "Hospitality & Personal Care Solutions",
+    description:
+      "Product solutions for hotels, resorts and businesses.",
   },
   {
     icon: Boxes,
     title: "Bulk Business Supply",
-    description: "Solutions for importers and distributors.",
+    description:
+      "Solutions for importers and distributors.",
   },
 ];
+
+/* =========================================================
+   HOME EXPORT SECTION
+========================================================= */
 
 const HomeExportSection = () => {
   return (
@@ -39,7 +49,6 @@ const HomeExportSection = () => {
         relative isolate w-full overflow-hidden
         bg-[#F1F7F4]
         py-12 sm:py-16 lg:py-20
-        
       "
     >
       {/* SOFT GREEN BACKGROUND GLOW */}
@@ -65,6 +74,7 @@ const HomeExportSection = () => {
       />
 
       <div className="relative mx-auto max-w-[1380px] px-5 sm:px-7 lg:px-10">
+
         {/* TOP LABEL */}
         <div className="mb-8 flex items-center justify-between border-b border-[#D4E2DC] pb-4">
           <div className="flex items-center gap-3">
@@ -83,6 +93,7 @@ const HomeExportSection = () => {
 
         {/* MAIN LAYOUT */}
         <div className="grid grid-cols-1 items-center gap-9 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+
           {/* LEFT CONTENT */}
           <motion.div
             initial={{ opacity: 0, x: -25 }}
@@ -91,6 +102,7 @@ const HomeExportSection = () => {
             transition={{ duration: 0.65 }}
             className="order-2 lg:order-1"
           >
+
             {/* EYEBROW */}
             <div className="mb-4 flex items-center gap-2 text-[#438D76]">
               <Globe2 size={19} strokeWidth={1.8} />
@@ -103,25 +115,31 @@ const HomeExportSection = () => {
             {/* HEADING */}
             <h2
               className="
-    text-[29px] font-bold
-    leading-[1.25] tracking-[-0.035em]
-    text-[#181818]
-    sm:text-[34px]
-    lg:text-[36px]
-    xl:text-[40px]
-  "
+                text-[29px] font-bold
+                leading-[1.25] tracking-[-0.035em]
+                text-[#181818]
+                sm:text-[34px]
+                lg:text-[36px]
+                xl:text-[40px]
+              "
             >
-              Made in India. <span className="text-[#438D76]">Crafted for</span>{" "}
-              <span className="text-[#F07832]">Global Markets.</span>
+              Made in India.{" "}
+              <span className="text-[#438D76]">
+                Crafted for
+              </span>{" "}
+              <span className="text-[#F07832]">
+                Global Markets.
+              </span>
             </h2>
 
             {/* DESCRIPTION */}
             <p className="mt-5 max-w-[580px] text-[13px] leading-[1.9] text-[#58675F] sm:text-[15px]">
-              Mutation Dermacare is expanding its vision beyond borders with
-              skincare, haircare, personal care and hospitality product
-              solutions. We welcome international importers, distributors and
-              private label partners seeking business-focused product sourcing
-              and packaging solutions.
+              Mutation Dermacare is expanding its vision beyond
+              borders with skincare, haircare, personal care and
+              hospitality product solutions. We welcome international
+              importers, distributors and business partners seeking
+              reliable product sourcing, bulk supply and packaging
+              solutions.
             </p>
 
             {/* HIGHLIGHTS */}
@@ -173,39 +191,40 @@ const HomeExportSection = () => {
               })}
             </div>
 
-            {/* CTA */}
-
             {/* CTA BUTTON */}
             <div className="mt-7 flex flex-wrap items-center gap-5">
               <Link
                 to="/contact"
                 className="
-      group inline-flex min-h-[54px]
-      items-center gap-4
-      rounded-full
-      bg-[#F07832]
-      py-2 pl-2 pr-3
-      text-white
-      shadow-[0_10px_28px_rgba(240,120,50,0.22)]
-      transition-all duration-300
-      hover:-translate-y-1
-      hover:bg-[#E96822]
-      hover:shadow-[0_14px_35px_rgba(240,120,50,0.3)]
-      sm:gap-5 sm:pr-4
-    "
+                  group inline-flex min-h-[54px]
+                  items-center gap-4
+                  rounded-full
+                  bg-[#F07832]
+                  py-2 pl-2 pr-3
+                  text-white
+                  shadow-[0_10px_28px_rgba(240,120,50,0.22)]
+                  transition-all duration-300
+                  hover:-translate-y-1
+                  hover:bg-[#E96822]
+                  hover:shadow-[0_14px_35px_rgba(240,120,50,0.3)]
+                  sm:gap-5 sm:pr-4
+                "
               >
                 {/* LEFT CHAT ICON */}
                 <span
                   className="
-        flex h-10 w-10 shrink-0
-        items-center justify-center
-        rounded-full
-        bg-[#FFF0E7]
-        text-[#F07832]
-        sm:h-11 sm:w-11
-      "
+                    flex h-10 w-10 shrink-0
+                    items-center justify-center
+                    rounded-full
+                    bg-[#FFF0E7]
+                    text-[#F07832]
+                    sm:h-11 sm:w-11
+                  "
                 >
-                  <MessageCircleMore size={21} strokeWidth={2} />
+                  <MessageCircleMore
+                    size={21}
+                    strokeWidth={2}
+                  />
                 </span>
 
                 {/* DIVIDER */}
@@ -214,10 +233,10 @@ const HomeExportSection = () => {
                 {/* BUTTON TEXT */}
                 <span
                   className="
-        whitespace-nowrap
-        text-[12px] font-bold
-        sm:text-[14px]
-      "
+                    whitespace-nowrap
+                    text-[12px] font-bold
+                    sm:text-[14px]
+                  "
                 >
                   Connect for Bulk Order
                 </span>
@@ -225,23 +244,23 @@ const HomeExportSection = () => {
                 {/* RIGHT ARROW */}
                 <span
                   className="
-        ml-1 flex h-9 w-9 shrink-0
-        items-center justify-center
-        rounded-full
-        bg-[#D95E1D]
-        transition-all duration-300
-        group-hover:bg-[#C85216]
-        sm:h-10 sm:w-10
-      "
+                    ml-1 flex h-9 w-9 shrink-0
+                    items-center justify-center
+                    rounded-full
+                    bg-[#D95E1D]
+                    transition-all duration-300
+                    group-hover:bg-[#C85216]
+                    sm:h-10 sm:w-10
+                  "
                 >
                   <ArrowUpRight
                     size={20}
                     strokeWidth={2.2}
                     className="
-          transition-transform duration-300
-          group-hover:-translate-y-0.5
-          group-hover:translate-x-0.5
-        "
+                      transition-transform duration-300
+                      group-hover:-translate-y-0.5
+                      group-hover:translate-x-0.5
+                    "
                   />
                 </span>
               </Link>
@@ -250,8 +269,16 @@ const HomeExportSection = () => {
 
           {/* RIGHT IMAGE */}
           <motion.div
-            initial={{ opacity: 0, x: 25, scale: 0.98 }}
-            whileInView={{ opacity: 1, x: 0, scale: 1 }}
+            initial={{
+              opacity: 0,
+              x: 25,
+              scale: 0.98,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              scale: 1,
+            }}
             viewport={{ once: true }}
             transition={{ duration: 0.75 }}
             className="relative order-1 lg:order-2"
@@ -292,6 +319,7 @@ const HomeExportSection = () => {
 
               {/* IMAGE BOTTOM LABEL */}
               <div className="absolute bottom-6 left-5 right-5 sm:bottom-8 sm:left-8 sm:right-8">
+
                 <div className="mb-3 flex items-center gap-2 text-white/85">
                   <MapPin size={15} />
 
@@ -303,7 +331,9 @@ const HomeExportSection = () => {
                 <div className="flex items-end justify-between gap-4">
                   <p className="text-[25px] font-extrabold leading-[1.2] tracking-[-0.035em] text-white sm:text-[34px]">
                     INDIA
-                    <span className="mx-2 text-[#F07832]">→</span>
+                    <span className="mx-2 text-[#F07832]">
+                      →
+                    </span>
                     GLOBAL
                     <br />
                     MARKETS
@@ -319,7 +349,10 @@ const HomeExportSection = () => {
                       text-white backdrop-blur-sm
                     "
                   >
-                    <Globe2 size={23} strokeWidth={1.5} />
+                    <Globe2
+                      size={23}
+                      strokeWidth={1.5}
+                    />
                   </div>
                 </div>
               </div>

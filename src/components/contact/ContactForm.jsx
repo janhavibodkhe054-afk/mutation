@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -178,21 +179,27 @@ const ContactForm = () => {
               className={`${fieldClass} cursor-pointer`}
             >
               <option value="">Select your requirement</option>
+
               <option value="personal-care">
                 Personal Care Products
               </option>
+
               <option value="hotel-amenities">
                 Hotel Amenities
               </option>
+
               <option value="travel-care">
                 Travel Care Kits
               </option>
-              <option value="private-label">
-                Private Label
+
+              <option value="parlour-salon">
+                Parlour &amp; Salon Products
               </option>
+
               <option value="bulk-order">
                 Bulk Order
               </option>
+
               <option value="other">
                 Other
               </option>

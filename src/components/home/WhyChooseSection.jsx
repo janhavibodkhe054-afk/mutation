@@ -1,9 +1,10 @@
+
 import React from "react";
 import {
   Layers3,
   Boxes,
   Hotel,
-  FlaskConical,
+  Scissors,
   PackageCheck,
   RefreshCw,
 } from "lucide-react";
@@ -32,17 +33,17 @@ const reasons = [
   },
   {
     no: "04",
-    icon: FlaskConical,
-    title: "Private Label Manufacturing",
+    icon: Scissors,
+    title: "Parlour & Salon Solutions",
     description:
-      "Product selection, packaging, branding and manufacturing support.",
+      "Professional skincare, haircare and beauty care product solutions for parlours, salons and beauty professionals.",
   },
   {
     no: "05",
     icon: PackageCheck,
-    title: "Custom Packaging & Branding",
+    title: "Travel Care Kit Solutions",
     description:
-      "Flexible packaging and customised product presentation.",
+      "Convenient travel care kits with essential personal care products for hospitality, travel and business requirements.",
   },
   {
     no: "06",
@@ -92,9 +93,7 @@ const WhyChooseSection = () => {
         }
       `}</style>
 
-      {/* =====================================================
-          BACKGROUND
-      ====================================================== */}
+      {/* BACKGROUND */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 overflow-hidden"
@@ -110,9 +109,7 @@ const WhyChooseSection = () => {
 
       <div className="relative mx-auto max-w-[1380px] px-5 py-14 sm:px-7 sm:py-16 lg:px-10 lg:py-20 xl:px-14">
 
-        {/* =====================================================
-            HEADER
-        ====================================================== */}
+        {/* HEADER */}
         <div className="mx-auto max-w-[820px] text-center">
           <div className="flex items-center justify-center gap-3">
             <span className="h-px w-[36px] bg-[#B8C3BD]" />
@@ -139,12 +136,10 @@ const WhyChooseSection = () => {
           </h2>
         </div>
 
-        {/* =====================================================
-            FEATURES
-        ====================================================== */}
+        {/* FEATURES */}
         <div className="relative mt-11 lg:mt-14">
 
-          {/* Center Line */}
+          {/* CENTER LINE */}
           <div className="absolute bottom-0 left-1/2 top-0 hidden w-px -translate-x-1/2 bg-[#C7D0CB] lg:block">
             <span
               className="why-motion absolute left-1/2 top-0 h-[9px] w-[9px] -translate-x-1/2 rounded-full bg-orange-500"
@@ -177,17 +172,9 @@ const WhyChooseSection = () => {
                         : "lg:pl-14 xl:pl-20"
                     }
 
-                    ${
-                      row < 2
-                        ? "border-b"
-                        : ""
-                    }
+                    ${row < 2 ? "border-b" : ""}
 
-                    ${
-                      index > 0
-                        ? "max-lg:border-t"
-                        : ""
-                    }
+                    ${index > 0 ? "max-lg:border-t" : ""}
                   `}
                 >
                   <div
@@ -223,11 +210,7 @@ const WhyChooseSection = () => {
                       <div
                         className={`
                           flex items-center gap-3
-                          ${
-                            isLeft
-                              ? "lg:justify-end"
-                              : ""
-                          }
+                          ${isLeft ? "lg:justify-end" : ""}
                         `}
                       >
                         <span className="text-[9px] font-bold tracking-[0.18em] text-orange-600">
@@ -247,11 +230,7 @@ const WhyChooseSection = () => {
                           text-[14px] font-medium
                           leading-[1.7] text-[#58655E]
                           sm:text-[15px]
-                          ${
-                            isLeft
-                              ? "lg:ml-auto"
-                              : ""
-                          }
+                          ${isLeft ? "lg:ml-auto" : ""}
                         `}
                       >
                         {item.description}
@@ -259,7 +238,7 @@ const WhyChooseSection = () => {
                     </div>
                   </div>
 
-                  {/* Center Node - Desktop */}
+                  {/* CENTER NODE - DESKTOP */}
                   <span
                     className={`
                       absolute top-1/2 z-10
@@ -283,7 +262,7 @@ const WhyChooseSection = () => {
                     `}
                   />
 
-                  {/* Hover Line */}
+                  {/* HOVER LINE */}
                   <span
                     className={`
                       absolute bottom-[-1px]
@@ -305,9 +284,7 @@ const WhyChooseSection = () => {
           </div>
         </div>
 
-        {/* =====================================================
-            COMPACT END STRIP
-        ====================================================== */}
+        {/* COMPACT END STRIP */}
         <div className="mt-9 flex items-center justify-center gap-4 border-t border-[#CDD5D1] pt-6">
           <span className="h-px w-[55px] bg-[#BCC7C1]" />
 
@@ -324,14 +301,14 @@ const WhyChooseSection = () => {
           <span className="h-[5px] w-[5px] rounded-full bg-[#438D76]" />
 
           <span className="text-[9px] font-bold uppercase tracking-[0.18em] text-[#647069]">
-            Private Label
+            Parlour & Salons
           </span>
 
           <span className="hidden h-px w-[55px] bg-[#BCC7C1] sm:block" />
         </div>
       </div>
 
-      {/* Bottom Brand Accent */}
+      {/* BOTTOM ACCENT */}
       <div className="flex h-[4px]">
         <span className="w-[28%] bg-orange-500" />
         <span className="flex-1 bg-[#438D76]" />

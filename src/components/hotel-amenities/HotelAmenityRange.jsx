@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import {
   ArrowLeft,
@@ -17,7 +18,7 @@ const products = [
     name: "Hair Shampoo",
     category: "Hair Care",
     reviews: "150 reviews",
-    image: "/hair-shampoo.webp",
+    image: "/hair-shampoo.png",
 
     specs: [
       ["Product Type", "Hair Shampoo"],
@@ -25,10 +26,7 @@ const products = [
       ["Hair Concern", "Daily Hair Care"],
       ["Hair Type", "All Hair Types"],
       ["Ideal For", "Hotel & Hospitality Use"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Bottle"],
       ["Supply Type", "Bulk / B2B"],
-      ["Customisation", "Customize as per customer"],
     ],
 
     description:
@@ -36,10 +34,9 @@ const products = [
 
     features: [
       "Suitable for everyday guest hair care",
-      "Convenient hotel amenity packaging",
+      "Convenient hotel amenity format",
       "Suitable for hospitality requirements",
       "Available for bulk requirements",
-      "Custom branding and packaging options available",
     ],
 
     benefits: [
@@ -57,7 +54,7 @@ const products = [
     name: "Hair Conditioner",
     category: "Hair Care",
     reviews: "150 reviews",
-    image: "/hair-conditioner.webp",
+    image: "/hair-conditioner.png",
 
     specs: [
       ["Product Type", "Hair Conditioner"],
@@ -65,10 +62,7 @@ const products = [
       ["Hair Concern", "Everyday Hair Care"],
       ["Hair Type", "All Hair Types"],
       ["Ideal For", "Hotel & Hospitality Use"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Bottle"],
       ["Supply Type", "Bulk / B2B"],
-      ["Customisation", "Customize as per customer"],
     ],
 
     description:
@@ -76,10 +70,9 @@ const products = [
 
     features: [
       "Suitable for everyday guest hair care",
-      "Convenient bottle packaging",
+      "Convenient bottle format",
       "Suitable for hospitality amenity ranges",
       "Available for bulk requirements",
-      "Custom branding options available",
     ],
 
     benefits: [
@@ -97,17 +90,14 @@ const products = [
     name: "Shower Gel",
     category: "Bath Care",
     reviews: "150 reviews",
-    image: "/shower-gell.webp",
+    image: "/shower-gell.png",
 
     specs: [
       ["Product Type", "Shower Gel"],
       ["Pack Size", "As per requirement"],
       ["Usage", "Daily Bath Care"],
       ["Ideal For", "Hotel & Hospitality Use"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Bottle"],
       ["Supply Type", "Bulk / B2B"],
-      ["Customisation", "Customize as per customer"],
     ],
 
     description:
@@ -116,9 +106,8 @@ const products = [
     features: [
       "Designed for hospitality guest use",
       "Convenient bathroom amenity",
-      "Easy-to-use bottle packaging",
+      "Easy-to-use bottle format",
       "Available for bulk requirements",
-      "Custom branding options available",
     ],
 
     benefits: [
@@ -136,17 +125,14 @@ const products = [
     name: "Face Wash",
     category: "Face Care",
     reviews: "150 reviews",
-    image: "/face-wash.webp",
+    image: "/face-wash.png",
 
     specs: [
       ["Product Type", "Face Wash"],
       ["Pack Size", "As per requirement"],
       ["Usage", "Everyday Face Cleansing"],
       ["Ideal For", "Hotel & Hospitality Use"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Bottle"],
       ["Supply Type", "Bulk / B2B"],
-      ["Customisation", "Customize as per customer"],
     ],
 
     description:
@@ -154,10 +140,9 @@ const products = [
 
     features: [
       "Suitable for everyday face cleansing",
-      "Guest-friendly packaging",
+      "Guest-friendly product format",
       "Convenient hotel amenity format",
       "Available for bulk supply",
-      "Custom branding options available",
     ],
 
     benefits: [
@@ -174,17 +159,14 @@ const products = [
     name: "Moisturiser",
     category: "Skin Care",
     reviews: "150 reviews",
-    image: "/moisturiser.webp",
+    image: "/moisturiser.png",
 
     specs: [
       ["Product Type", "Moisturiser"],
       ["Pack Size", "As per requirement"],
       ["Usage", "Everyday Skin Care"],
       ["Ideal For", "Hotel & Hospitality Use"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Bottle"],
       ["Supply Type", "Bulk / B2B"],
-      ["Customisation", "Customize as per customer"],
     ],
 
     description:
@@ -193,9 +175,8 @@ const products = [
     features: [
       "Convenient guest-care format",
       "Suitable for hospitality requirements",
-      "Easy-to-use packaging",
+      "Easy-to-use product format",
       "Available for bulk supply",
-      "Custom branding options available",
     ],
 
     benefits: [
@@ -212,17 +193,14 @@ const products = [
     name: "Hair Oil",
     category: "Hair Care",
     reviews: "150 reviews",
-    image: "/hairoil.webp",
+    image: "/hairoil.png",
 
     specs: [
       ["Product Type", "Hair Oil"],
       ["Pack Size", "As per requirement"],
       ["Usage", "Hair Care"],
       ["Ideal For", "Hotel & Hospitality Use"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Bottle"],
       ["Supply Type", "Bulk / B2B"],
-      ["Customisation", "Customize as per customer"],
     ],
 
     description:
@@ -233,7 +211,6 @@ const products = [
       "Suitable for hotel amenity kits",
       "Available for hospitality requirements",
       "Bulk supply available",
-      "Custom branding options available",
     ],
 
     benefits: [
@@ -257,10 +234,7 @@ const products = [
       ["Category", "Guest Essentials"],
       ["Usage", "Guest Oral Care"],
       ["Ideal For", "Hotels, Resorts & Homestays"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Individual Kit"],
       ["Supply Type", "Bulk / B2B"],
-      ["Customisation", "Customize as per customer"],
     ],
 
     description:
@@ -268,10 +242,9 @@ const products = [
 
     features: [
       "Compact guest amenity",
-      "Convenient individual packaging",
+      "Convenient individual-use kit",
       "Suitable for hotel guest rooms",
       "Available for bulk requirements",
-      "Custom branding options available",
     ],
 
     benefits: [
@@ -295,10 +268,7 @@ const products = [
       ["Category", "Guest Comfort"],
       ["Usage", "Guest Room Use"],
       ["Ideal For", "Hotels & Resorts"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Individual Pack"],
       ["Supply Type", "Bulk / B2B"],
-      ["Customisation", "Customize as per customer"],
     ],
 
     description:
@@ -309,7 +279,6 @@ const products = [
       "Individual-use format",
       "Suitable for hospitality properties",
       "Available for bulk requirements",
-      "Customisation options available",
     ],
 
     benefits: [
@@ -333,10 +302,7 @@ const products = [
       ["Category", "Guest Essentials"],
       ["Usage", "Bathroom Amenity"],
       ["Ideal For", "Hotels & Resorts"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Individual Pack"],
       ["Supply Type", "Bulk / B2B"],
-      ["Customisation", "Customize as per customer"],
     ],
 
     description:
@@ -344,10 +310,9 @@ const products = [
 
     features: [
       "Compact hospitality essential",
-      "Individual guest packaging",
+      "Individual guest-use format",
       "Suitable for hotel bathrooms",
       "Available for bulk supply",
-      "Custom packaging options available",
     ],
 
     benefits: [
@@ -371,10 +336,7 @@ const products = [
       ["Category", "Guest Essentials"],
       ["Usage", "Guest Personal Care"],
       ["Ideal For", "Hotels & Resorts"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Individual Kit"],
       ["Supply Type", "Bulk / B2B"],
-      ["Customisation", "Customize as per customer"],
     ],
 
     description:
@@ -382,10 +344,9 @@ const products = [
 
     features: [
       "Compact guest-care kit",
-      "Convenient individual packaging",
+      "Convenient individual-use kit",
       "Suitable for hotel guest rooms",
       "Available for bulk supply",
-      "Custom branding options available",
     ],
 
     benefits: [
@@ -409,10 +370,7 @@ const products = [
       ["Category", "Baby Care"],
       ["Pack Size", "As per requirement"],
       ["Ideal For", "Hospitality Requirements"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Bottle"],
       ["Supply Type", "Bulk / B2B"],
-      ["Customisation", "Customize as per customer"],
     ],
 
     description:
@@ -420,10 +378,9 @@ const products = [
 
     features: [
       "Baby-care amenity option",
-      "Convenient bottle packaging",
+      "Convenient bottle format",
       "Suitable for hospitality requirements",
       "Available for bulk supply",
-      "Custom branding options available",
     ],
 
     benefits: [
@@ -440,17 +397,14 @@ const products = [
     name: "Baby Lotion",
     category: "Baby Care",
     reviews: "150 reviews",
-    image: "/baby-lotion.jpeg",
+    image: "/baby-lotion.png",
 
     specs: [
       ["Product Type", "Baby Lotion"],
       ["Category", "Baby Care"],
       ["Pack Size", "As per requirement"],
       ["Ideal For", "Hospitality Requirements"],
-      ["Brand", "Mutation Dermacare"],
-      ["Packaging Type", "Bottle"],
       ["Supply Type", "Bulk / B2B"],
-      ["Customisation", "Customize as per customer"],
     ],
 
     description:
@@ -458,10 +412,9 @@ const products = [
 
     features: [
       "Baby-care amenity option",
-      "Convenient bottle packaging",
+      "Convenient bottle format",
       "Suitable for hospitality use",
       "Available for bulk supply",
-      "Custom branding options available",
     ],
 
     benefits: [
@@ -489,10 +442,6 @@ const HotelAmenityRange = () => {
     setSelectedProduct(null);
   };
 
-  /* =========================================================
-     BODY SCROLL LOCK
-  ========================================================= */
-
   useEffect(() => {
     if (selectedProduct) {
       document.body.style.overflow = "hidden";
@@ -504,10 +453,6 @@ const HotelAmenityRange = () => {
       document.body.style.overflow = "";
     };
   }, [selectedProduct]);
-
-  /* =========================================================
-     ESC CLOSE
-  ========================================================= */
 
   useEffect(() => {
     const handleEscape = (event) => {
@@ -523,10 +468,6 @@ const HotelAmenityRange = () => {
     };
   }, []);
 
-  /* =========================================================
-     WHATSAPP LINK
-  ========================================================= */
-
   const getWhatsAppLink = () => {
     if (!selectedProduct) return "#";
 
@@ -539,32 +480,23 @@ const HotelAmenityRange = () => {
 
   return (
     <>
-      {/* =====================================================
-          HOTEL AMENITY PRODUCTS
-      ====================================================== */}
-
+      {/* HOTEL AMENITY PRODUCTS */}
       <section
         id="hotel-amenities-range"
         className="relative overflow-hidden bg-[#F6F4F0] py-14 sm:py-16 lg:py-[70px]"
       >
         {/* BACKGROUND DETAILS */}
-
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 overflow-hidden"
         >
           <div className="absolute -right-[170px] top-[60px] h-[340px] w-[340px] rounded-full border border-[#438D76]/10" />
-
           <div className="absolute -left-[160px] bottom-[100px] h-[320px] w-[320px] rounded-full border border-orange-500/10" />
-
           <div className="absolute left-[8%] top-0 h-[55px] w-px bg-orange-500/25" />
         </div>
 
         <div className="relative mx-auto max-w-[1380px] px-5 sm:px-7 lg:px-10 xl:px-14">
-          {/* =================================================
-              HEADING
-          ================================================= */}
-
+          {/* HEADING */}
           <div className="mx-auto max-w-[760px] text-center">
             <div className="flex items-center justify-center gap-3">
               <span className="h-px w-[35px] bg-orange-500" />
@@ -584,15 +516,12 @@ const HotelAmenityRange = () => {
             </h2>
 
             <p className="mx-auto mt-4 max-w-[620px] text-[15px] font-medium leading-[1.75] text-[#55615B] sm:text-[16px]">
-              A complete range of personal care and guest essentials for
-              hotels, resorts, homestays and hospitality businesses.
+              A complete range of personal care and guest essentials for hotels,
+              resorts, homestays and hospitality businesses.
             </p>
           </div>
 
-          {/* =================================================
-              PRODUCTS GRID
-          ================================================= */}
-
+          {/* PRODUCTS GRID */}
           <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {products.map((product) => (
               <article
@@ -614,75 +543,48 @@ const HotelAmenityRange = () => {
                   hover:shadow-[0_15px_35px_rgba(25,42,34,0.10)]
                 "
               >
-                {/* =============================================
-                    IMAGE
-                ============================================== */}
-
+                {/* PRODUCT IMAGE */}
                 <div
                   className="
-                    relative
-                    flex
-                    h-[235px]
-                    items-center
-                    justify-center
+                    relative flex
+                    h-[300px] sm:h-[330px] lg:h-[350px]
+                    items-center justify-center
                     overflow-hidden
                     bg-[#F2F1ED]
-                    sm:h-[245px]
                   "
                 >
-                  {/* CATEGORY */}
-
                   <span
                     className="
-                      absolute
-                      left-3
-                      top-3
-                      z-10
-                      rounded-[5px]
-                      bg-white
-                      px-3
-                      py-[6px]
-                      text-[9px]
-                      font-bold
-                      uppercase
-                      tracking-[0.1em]
-                      text-[#438D76]
+                      absolute left-3 top-3 z-10
+                      rounded-[5px] bg-white
+                      px-3 py-[6px]
+                      text-[9px] font-bold uppercase
+                      tracking-[0.1em] text-[#438D76]
                       shadow-sm
                     "
                   >
                     {product.category}
                   </span>
 
-                  {/* PRODUCT IMAGE */}
-
                   <img
                     src={product.image}
                     alt={product.name}
+                    loading="lazy"
                     className="
-                      h-full
-                      w-full
+                      h-full w-full
                       object-contain
-                      p-4
-                      transition-transform
-                      duration-500
-                      ease-out
-                      group-hover:scale-[1.06]
+                      p-0
+                      transition-transform duration-500 ease-out
+                      group-hover:scale-[1.08]
                     "
                   />
                 </div>
 
-                {/* =============================================
-                    CARD CONTENT
-                ============================================== */}
-
+                {/* CARD CONTENT */}
                 <div className="p-4">
-                  {/* REVIEWS */}
-
                   <p className="text-[12px] font-medium text-[#77817C]">
                     {product.reviews}
                   </p>
-
-                  {/* NAME */}
 
                   <h3
                     className="
@@ -697,8 +599,6 @@ const HotelAmenityRange = () => {
                   >
                     {product.name}
                   </h3>
-
-                  {/* ENQUIRE */}
 
                   <div className="mt-3 border-t border-[#E5E8E6] pt-3">
                     <button
@@ -749,10 +649,7 @@ const HotelAmenityRange = () => {
         </div>
       </section>
 
-      {/* =====================================================
-          PRODUCT DETAIL MODAL
-      ====================================================== */}
-
+      {/* PRODUCT DETAIL MODAL */}
       {selectedProduct && (
         <div
           className="
@@ -786,10 +683,7 @@ const HotelAmenityRange = () => {
               shadow-[0_25px_80px_rgba(0,0,0,0.30)]
             "
           >
-            {/* =================================================
-                HEADER
-            ================================================= */}
-
+            {/* MODAL HEADER */}
             <div
               className="
                 sticky
@@ -862,51 +756,32 @@ const HotelAmenityRange = () => {
               </button>
             </div>
 
-            {/* =================================================
-                CONTENT
-            ================================================= */}
-
+            {/* MODAL CONTENT */}
             <div className="px-4 pb-5 pt-4 sm:px-6">
-              {/* =================================================
-                  ONE LARGE PRODUCT IMAGE
-              ================================================= */}
-
+              {/* PRODUCT IMAGE */}
               <div
                 className="
-                  group/image
-                  relative
-                  flex
-                  h-[245px]
-                  w-full
-                  items-center
-                  justify-center
-                  overflow-hidden
-                  rounded-[6px]
-                  border
-                  border-[#D9DEDB]
+                  group/image relative flex
+                  h-[320px] sm:h-[420px]
+                  w-full items-center justify-center
+                  overflow-hidden rounded-[6px]
+                  border border-[#D9DEDB]
                   bg-[#F5F4F1]
-                  sm:h-[300px]
                 "
               >
                 <img
                   src={selectedProduct.image}
                   alt={selectedProduct.name}
                   className="
-                    h-[95%]
-                    w-[95%]
+                    h-full w-full
                     object-contain
-                    transition-transform
-                    duration-500
-                    ease-out
-                    group-hover/image:scale-[1.10]
+                    transition-transform duration-500 ease-out
+                    group-hover/image:scale-[1.08]
                   "
                 />
               </div>
 
-              {/* =================================================
-                  SPECIFICATIONS
-              ================================================= */}
-
+              {/* SPECIFICATIONS */}
               <div className="mt-4">
                 {selectedProduct.specs.map(([label, value], index) => (
                   <div
@@ -946,20 +821,9 @@ const HotelAmenityRange = () => {
                 ))}
               </div>
 
-              {/* =================================================
-                  DESCRIPTION
-              ================================================= */}
-
+              {/* DESCRIPTION */}
               <div className="mt-4 border-t border-[#E0E2E1] pt-3">
-                <p
-                  className="
-                    text-[14px]
-                    font-medium
-                    leading-[1.6]
-                    text-[#333A36]
-                    sm:text-[15px]
-                  "
-                >
+                <p className="text-[14px] font-medium leading-[1.6] text-[#333A36] sm:text-[15px]">
                   <span className="font-bold text-[#202622]">
                     Description:
                   </span>{" "}
@@ -967,10 +831,7 @@ const HotelAmenityRange = () => {
                 </p>
               </div>
 
-              {/* =================================================
-                  KEY FEATURES
-              ================================================= */}
-
+              {/* KEY FEATURES */}
               <div className="mt-2.5">
                 <p className="text-[14px] font-bold text-[#202622] sm:text-[15px]">
                   Key Features:
@@ -980,13 +841,7 @@ const HotelAmenityRange = () => {
                   {selectedProduct.features.map((item) => (
                     <p
                       key={item}
-                      className="
-                        text-[14px]
-                        font-medium
-                        leading-[1.55]
-                        text-[#333A36]
-                        sm:text-[15px]
-                      "
+                      className="text-[14px] font-medium leading-[1.55] text-[#333A36] sm:text-[15px]"
                     >
                       - {item}
                     </p>
@@ -994,10 +849,7 @@ const HotelAmenityRange = () => {
                 </div>
               </div>
 
-              {/* =================================================
-                  BENEFITS
-              ================================================= */}
-
+              {/* BENEFITS */}
               <div className="mt-2.5">
                 <p className="text-[14px] font-bold text-[#202622] sm:text-[15px]">
                   Benefits:
@@ -1007,13 +859,7 @@ const HotelAmenityRange = () => {
                   {selectedProduct.benefits.map((item) => (
                     <p
                       key={item}
-                      className="
-                        text-[14px]
-                        font-medium
-                        leading-[1.55]
-                        text-[#333A36]
-                        sm:text-[15px]
-                      "
+                      className="text-[14px] font-medium leading-[1.55] text-[#333A36] sm:text-[15px]"
                     >
                       - {item}
                     </p>
@@ -1021,30 +867,15 @@ const HotelAmenityRange = () => {
                 </div>
               </div>
 
-              {/* =================================================
-                  PRODUCT DETAILS
-              ================================================= */}
-
-              <p
-                className="
-                  mt-2.5
-                  text-[14px]
-                  font-medium
-                  leading-[1.55]
-                  text-[#333A36]
-                  sm:text-[15px]
-                "
-              >
+              {/* PRODUCT DETAILS */}
+              <p className="mt-2.5 text-[14px] font-medium leading-[1.55] text-[#333A36] sm:text-[15px]">
                 <span className="font-bold text-[#202622]">
                   Product Details:
                 </span>{" "}
                 {selectedProduct.details}
               </p>
 
-              {/* =================================================
-                  COMPANY INFO
-              ================================================= */}
-
+              {/* COMPANY INFO */}
               <div className="mt-4 border-t border-[#E0E2E1] pt-3">
                 <p className="text-[16px] font-bold text-[#202622]">
                   Mutation Dermacare
@@ -1055,13 +886,8 @@ const HotelAmenityRange = () => {
                 </p>
               </div>
 
-              {/* =================================================
-                  WHATSAPP + CALL NOW
-              ================================================= */}
-
+              {/* WHATSAPP + CALL NOW */}
               <div className="mt-4 grid grid-cols-2 gap-2.5">
-                {/* WHATSAPP */}
-
                 <a
                   href={getWhatsAppLink()}
                   target="_blank"
@@ -1087,11 +913,8 @@ const HotelAmenityRange = () => {
                   "
                 >
                   <MessageCircle size={18} strokeWidth={2.3} />
-
                   <span>WhatsApp</span>
                 </a>
-
-                {/* CALL NOW */}
 
                 <a
                   href="tel:+919921269023"
@@ -1114,7 +937,6 @@ const HotelAmenityRange = () => {
                   "
                 >
                   <Phone size={17} strokeWidth={2.4} />
-
                   <span>Call Now</span>
                 </a>
               </div>

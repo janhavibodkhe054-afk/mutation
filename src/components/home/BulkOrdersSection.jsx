@@ -24,7 +24,7 @@ const audiences = [
   },
   {
     icon: Sparkles,
-    title: "Cosmetic Brands",
+    title: "Parlour & Salons",
   },
   {
     icon: Building2,

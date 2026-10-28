@@ -20,8 +20,6 @@ const solutionLinks = [
   { label: "Hotel Amenities", path: "/hotel-amenities" },
   { label: "Travel Care Kits", path: "/travel-care-kits" },
   { label: "Parlour & Salon", path: "/parlour-salon" },
-  { label: "Private Label", path: "/private-label" },
-  
 ];
 
 const legalLinks = [
@@ -53,7 +51,7 @@ const Footer = () => {
       <div className="relative mx-auto max-w-[1380px] px-5 pb-8 pt-10 sm:px-7 sm:pt-11 lg:px-10">
         <div className="grid gap-9 sm:grid-cols-2 lg:grid-cols-[1.35fr_0.7fr_1.1fr_1.25fr] lg:gap-10 xl:gap-14">
 
-          {/* BRAND */}
+          {/* COMPANY INFO */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link
               to="/"
@@ -70,11 +68,11 @@ const Footer = () => {
             <p className="mt-5 max-w-[355px] text-[14px] font-medium leading-[1.75] text-[#D5D5D5] sm:text-[15px]">
               Quality personal skin care products and complete B2B
               solutions for hotels, travel businesses, parlours,
-              salons, cosmetic brands and businesses exploring
+              salons, distributors and businesses exploring
               domestic and export markets.
             </p>
 
-            {/* NEW BULK ORDER CTA */}
+            {/* BULK ORDER CTA */}
             <Link
               to="/contact"
               className="
@@ -120,7 +118,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* COMPANY */}
+          {/* COMPANY LINKS */}
           <FooterColumn title="Company">
             {companyLinks.map((item) => (
               <FooterLink key={item.label} to={item.path}>
@@ -129,7 +127,7 @@ const Footer = () => {
             ))}
           </FooterColumn>
 
-          {/* SOLUTIONS */}
+          {/* SOLUTION LINKS */}
           <FooterColumn title="Solutions">
             {solutionLinks.map((item) => (
               <FooterLink key={item.label} to={item.path}>

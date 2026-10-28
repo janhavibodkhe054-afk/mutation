@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import {
   X,
@@ -13,17 +14,12 @@ import {
 ========================================================= */
 
 const products = [
-  /* =======================================================
-     1. ANTI HAIRFALL SHAMPOO
-  ======================================================= */
   {
     id: 1,
     name: "Anti Hairfall Shampoo",
     category: "Hair Care",
     badge: "New",
-
-    image: "/anti-hairfall.jpeg",
-
+    image: "/anti-hairfall.png",
     specs: [
       ["Brand Name", "Mutation Dermacare"],
       ["Product Name", "Anti Hair Fall Shampoo"],
@@ -39,14 +35,12 @@ const products = [
       ["Storage", "Store in Cool & Dry Place"],
       ["Country of Origin", "India"],
     ],
-
     features: [
       "Herbal ingredient-based hair care formulation",
       "Contains Aamalaki, Kumari and Bhringraj-based ingredients",
       "Suitable for dry, normal and oily types",
       "Designed for regular hair care",
     ],
-
     benefits: [
       "Supports everyday hair care",
       "Helps maintain healthy-looking hair",
@@ -54,18 +48,12 @@ const products = [
       "Convenient everyday hair care solution",
     ],
   },
-
-  /* =======================================================
-     2. NEEM SKIN CARE DUSTING POWDER
-  ======================================================= */
   {
     id: 2,
     name: "Neem Skin Care Dusting Powder",
     category: "Personal Care",
     badge: "New",
-
-    image: "/dusting-powder.jpeg",
-
+    image: "/dusting-powder.png",
     specs: [
       ["Brand Name", "Mutation Dermacare"],
       ["Product Name", "Neem Skin Care Dusting Powder"],
@@ -82,14 +70,12 @@ const products = [
       ["Storage", "Store in Cool & Dry Place"],
       ["Country of Origin", "India"],
     ],
-
     features: [
       "Neem-based skin care powder",
       "Powder formulation for convenient application",
       "Suitable for oily and normal skin",
       "Fragrance-free formulation",
     ],
-
     benefits: [
       "Supports everyday personal skin care",
       "Helps maintain a fresh skin feel",
@@ -97,18 +83,12 @@ const products = [
       "Convenient powder format for everyday use",
     ],
   },
-
-  /* =======================================================
-     3. FAIRNESS FACE GEL
-  ======================================================= */
   {
     id: 3,
     name: "Fairness Face Gel",
     category: "Face Care",
     badge: "New",
-
-    image: "/fairness-gel.jpeg",
-
+    image: "/fairness-gel.png",
     specs: [
       ["Brand Name", "Mutation Dermacare"],
       ["Product Name", "Fairness Face Gel"],
@@ -125,7 +105,6 @@ const products = [
       ["Storage", "Store in Cool & Dry Place"],
       ["Country of Origin", "India"],
     ],
-
     features: [
       "Lightweight gel-based formulation",
       "Contains Saffron Hydrosol and Niacinamide",
@@ -133,7 +112,6 @@ const products = [
       "Suitable for all skin types",
       "Fragrance-free formulation",
     ],
-
     benefits: [
       "Supports everyday facial skincare",
       "Helps maintain a hydrated skin feel",
@@ -141,18 +119,12 @@ const products = [
       "Lightweight gel format for convenient application",
     ],
   },
-
-  /* =======================================================
-     4. MOISTURISING CREAM
-  ======================================================= */
   {
     id: 4,
     name: "Moisturising Cream",
     category: "Skin Care",
     badge: "New",
-
-    image: "/moisturising.jpeg",
-
+    image: "/moisturising.png",
     specs: [
       ["Brand Name", "Mutation Dermacare"],
       ["Product Name", "Moisturising Cream"],
@@ -169,7 +141,6 @@ const products = [
       ["Storage", "Store in Cool & Dry Place"],
       ["Country of Origin", "India"],
     ],
-
     features: [
       "Cream-based moisturising formulation",
       "Contains Calendula Flower Extract",
@@ -177,7 +148,6 @@ const products = [
       "Suitable for all skin types",
       "Mogra fragrance",
     ],
-
     benefits: [
       "Supports everyday skin moisturisation",
       "Helps maintain soft and comfortable-feeling skin",
@@ -185,18 +155,12 @@ const products = [
       "Convenient cream format for everyday application",
     ],
   },
-
-  /* =======================================================
-     5. MOISTURISING BATHING BAR
-  ======================================================= */
   {
     id: 5,
     name: "Moisturising Bathing Bar",
     category: "Bath Care",
     badge: "New",
-
-    image: "/moisturising-soap.jpeg",
-
+    image: "/moisturising-soap.png",
     specs: [
       ["Brand Name", "Mutation Dermacare"],
       ["Product Name", "Moisturising Bathing Bar"],
@@ -209,7 +173,6 @@ const products = [
       ["Storage", "Store in Cool & Dry Place"],
       ["Country of Origin", "India"],
     ],
-
     features: [
       "Moisturising bathing bar formulation",
       "Contains Vitamin E and Glycerine",
@@ -217,7 +180,6 @@ const products = [
       "Suitable for all skin types",
       "Fragrance-free",
     ],
-
     benefits: [
       "Supports everyday skin cleansing",
       "Helps maintain a moisturised skin feel",
@@ -225,61 +187,45 @@ const products = [
       "Suitable for everyday personal skin care routines",
     ],
   },
-
-  /* =======================================================
-     6. NEEM BATHING BAR
-  ======================================================= */
-  
-{
-  id: 6,
-  name: "Neem Bathing Bar",
-  category: "Personal Skin Care",
-  badge: "New",
-
-  image: "/neem-soap.jpeg",
-
-  specs: [
-    ["Brand Name", "Mutation Dermacare"],
-    ["Product Name", "Neem Bathing Bar"],
-    ["Product Category", "Personal Skin Care – Bath Care"],
-    ["Pack Size", "100 g"],
-    ["Skin Type", "All"],
-    ["Age Group", "Above 20 Years"],
-    ["Fragrance", "No"],
-    ["Key Ingredients", "Neem, Camphor, Rosemary"],
-    ["Shelf Life", "36 Months"],
-    ["Country of Origin", "India"],
-  ],
-
-  features: [
-    "Personal skin care bathing bar",
-    "Neem-based bathing bar",
-    "Contains Neem, Camphor and Rosemary",
-    "Suitable for all skin types",
-    "Designed for everyday cleansing",
-    "Fragrance-free",
-  ],
-
-  benefits: [
-    "Supports regular skin cleansing",
-    "Suitable for everyday personal skin care",
-    "Convenient for regular personal care",
-    "Neem-based option for daily cleansing routines",
-  ],
-},
-
-
-  /* =======================================================
-     7. SAFFRON RADIANCE FACE WASH
-  ======================================================= */
+  {
+    id: 6,
+    name: "Neem Bathing Bar",
+    category: "Personal Skin Care",
+    badge: "New",
+    image: "/neem-soap.png",
+    specs: [
+      ["Brand Name", "Mutation Dermacare"],
+      ["Product Name", "Neem Bathing Bar"],
+      ["Product Category", "Personal Skin Care – Bath Care"],
+      ["Pack Size", "100 g"],
+      ["Skin Type", "All"],
+      ["Age Group", "Above 20 Years"],
+      ["Fragrance", "No"],
+      ["Key Ingredients", "Neem, Camphor, Rosemary"],
+      ["Shelf Life", "36 Months"],
+      ["Country of Origin", "India"],
+    ],
+    features: [
+      "Personal skin care bathing bar",
+      "Neem-based bathing bar",
+      "Contains Neem, Camphor and Rosemary",
+      "Suitable for all skin types",
+      "Designed for everyday cleansing",
+      "Fragrance-free",
+    ],
+    benefits: [
+      "Supports regular skin cleansing",
+      "Suitable for everyday personal skin care",
+      "Convenient for regular personal care",
+      "Neem-based option for daily cleansing routines",
+    ],
+  },
   {
     id: 7,
     name: "Saffron Radiance Face Wash",
     category: "Face Care",
     badge: "New",
-
-    image: "/radiance-face-wash.jpeg",
-
+    image: "/radiance-face.png",
     specs: [
       ["Brand Name", "Mutation Dermacare"],
       ["Product Name", "Saffron Radiance Face Wash"],
@@ -292,7 +238,6 @@ const products = [
       ["Storage", "Store in Cool & Dry Place"],
       ["Country of Origin", "India"],
     ],
-
     features: [
       "Saffron Hydrosol-based face care formulation",
       "Designed for everyday facial cleansing",
@@ -300,7 +245,6 @@ const products = [
       "Rose fragrance",
       "Convenient face wash format",
     ],
-
     benefits: [
       "Supports everyday facial cleansing",
       "Helps maintain a fresh and clean skin feel",
@@ -308,18 +252,12 @@ const products = [
       "Suitable for regular face care",
     ],
   },
-
-  /* =======================================================
-     8. BABY SOFT SKIN LOTION
-  ======================================================= */
   {
     id: 8,
     name: "Baby Soft Skin Lotion",
     category: "Baby Care",
     badge: "New",
-
-    image: "/baby-lotion.jpeg",
-
+    image: "/baby-lotion.png",
     specs: [
       ["Brand Name", "Mutation Dermacare"],
       ["Product Name", "Baby Soft Skin Lotion"],
@@ -336,7 +274,6 @@ const products = [
       ["Storage", "Store in Cool & Dry Place"],
       ["Country of Origin", "India"],
     ],
-
     features: [
       "Lotion formulation developed for baby care",
       "Contains Calendula Hydrosol and Glycerine",
@@ -344,7 +281,6 @@ const products = [
       "Suitable for all skin types",
       "Baby fragrance",
     ],
-
     benefits: [
       "Supports everyday baby skin moisturisation",
       "Helps maintain soft and comfortable-feeling skin",
@@ -355,7 +291,22 @@ const products = [
 ];
 
 /* =========================================================
-   COMPONENT
+   SECTION HEADING
+========================================================= */
+
+const SectionHeading = ({ children }) => {
+  return (
+    <div className="flex items-center gap-2.5">
+      <span className="h-[18px] w-[3px] rounded-full bg-orange-500" />
+      <h3 className="text-[15px] font-bold leading-[1.4] text-[#17251F] sm:text-[16px]">
+        {children}
+      </h3>
+    </div>
+  );
+};
+
+/* =========================================================
+   PRODUCTS SECTION
 ========================================================= */
 
 const ProductsSection = () => {
@@ -369,10 +320,7 @@ const ProductsSection = () => {
     setSelectedProduct(null);
   };
 
-  /* =========================================================
-     BODY SCROLL LOCK
-  ========================================================= */
-
+  // BODY SCROLL LOCK
   useEffect(() => {
     if (selectedProduct) {
       document.body.style.overflow = "hidden";
@@ -385,10 +333,7 @@ const ProductsSection = () => {
     };
   }, [selectedProduct]);
 
-  /* =========================================================
-     ESC CLOSE
-  ========================================================= */
-
+  // ESC KEY CLOSE
   useEffect(() => {
     const handleEscape = (event) => {
       if (event.key === "Escape") {
@@ -403,10 +348,7 @@ const ProductsSection = () => {
     };
   }, []);
 
-  /* =========================================================
-     WHATSAPP
-  ========================================================= */
-
+  // WHATSAPP LINK
   const getWhatsAppLink = () => {
     if (!selectedProduct) return "#";
 
@@ -419,21 +361,17 @@ const ProductsSection = () => {
 
   return (
     <>
-      {/* =====================================================
-          PRODUCTS SECTION
-      ====================================================== */}
-
+      {/* PRODUCTS GRID */}
       <section
         id="products-grid"
         className="relative bg-[#F7F7F5] py-14 sm:py-16 lg:py-[68px]"
       >
         <div className="mx-auto max-w-[1280px] px-5 sm:px-7 lg:px-10 xl:px-12">
-          {/* HEADING */}
 
+          {/* HEADING */}
           <div className="mb-9 max-w-[700px]">
             <div className="flex items-center gap-3">
               <span className="h-[2px] w-[32px] bg-orange-500" />
-
               <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-orange-600 sm:text-[12px]">
                 Our Products
               </span>
@@ -445,59 +383,56 @@ const ProductsSection = () => {
             </h2>
 
             <p className="mt-3 max-w-[650px] text-[15px] font-medium leading-[1.7] text-[#505C56] sm:text-[16px]">
-              Explore our personal skin care range for everyday skincare, haircare,
-              bath and hygiene requirements.
+              Explore our personal skin care range for everyday
+              skincare, haircare, bath and hygiene requirements.
             </p>
           </div>
 
-          {/* PRODUCTS GRID */}
-
+          {/* PRODUCT CARDS */}
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {products.map((product) => (
               <article
                 key={product.id}
                 onClick={() => openProduct(product)}
                 className="
-                  group
-                  cursor-pointer
-                  overflow-hidden
+                  group cursor-pointer overflow-hidden
                   rounded-[14px]
-                  border
-                  border-[#DFE3E0]
+                  border border-[#DFE3E0]
                   bg-white
                   shadow-[0_5px_18px_rgba(25,42,34,0.05)]
-                  transition-all
-                  duration-300
+                  transition-all duration-300
                   hover:-translate-y-[4px]
                   hover:border-[#438D76]/40
                   hover:shadow-[0_14px_30px_rgba(25,42,34,0.09)]
                 "
               >
-                {/* IMAGE */}
+                {/* BIGGER PRODUCT IMAGE */}
+                
+{/* PRODUCT IMAGE - SAME CARD SIZE, BIGGER IMAGE */}
+<div className="relative flex h-[245px] items-center justify-center overflow-hidden bg-[#F4F3EF] sm:h-[255px]">
+  <span className="absolute right-3 top-3 z-10 rounded-[6px] bg-orange-500 px-3 py-[6px] text-[11px] font-bold text-white">
+    {product.badge}
+  </span>
 
-                <div className="relative flex h-[245px] items-center justify-center overflow-hidden bg-[#F4F3EF] sm:h-[255px]">
-                  <span className="absolute right-3 top-3 z-10 rounded-[6px] bg-orange-500 px-3 py-[6px] text-[11px] font-bold text-white">
-                    {product.badge}
-                  </span>
+  <img
+    src={product.image}
+    alt={product.name}
+    loading="lazy"
+    className="
+      h-full
+      w-full
+      object-contain
+      p-0
+      scale-[1.12]
+      transition-transform
+      duration-500
+      group-hover:scale-[1.18]
+    "
+  />
+</div>
 
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    loading="lazy"
-                    className="
-                      h-full
-                      w-full
-                      object-contain
-                      p-4
-                      transition-transform
-                      duration-500
-                      group-hover:scale-[1.04]
-                    "
-                  />
-                </div>
 
-                {/* CONTENT */}
-
+                {/* CARD CONTENT */}
                 <div className="p-4">
                   <span className="text-[10px] font-bold uppercase tracking-[0.12em] text-orange-600">
                     {product.category}
@@ -517,7 +452,6 @@ const ProductsSection = () => {
                       className="group/button inline-flex items-center gap-1.5 text-[12px] font-bold text-[#367762]"
                     >
                       View Details
-
                       <ArrowRight
                         size={14}
                         className="transition-transform duration-300 group-hover/button:translate-x-1"
@@ -531,24 +465,14 @@ const ProductsSection = () => {
         </div>
       </section>
 
-      {/* =====================================================
-          PRODUCT MODAL
-      ====================================================== */}
-
+      {/* PRODUCT DETAILS MODAL */}
       {selectedProduct && (
         <div
           className="
-            fixed
-            inset-0
-            z-[9999]
-            flex
-            items-center
-            justify-center
-            overflow-y-auto
-            bg-black/65
-            p-2
-            backdrop-blur-[2px]
-            sm:p-4
+            fixed inset-0 z-[9999]
+            flex items-center justify-center
+            overflow-y-auto bg-black/65
+            p-2 backdrop-blur-[2px] sm:p-4
           "
           onClick={closeModal}
         >
@@ -558,35 +482,15 @@ const ProductsSection = () => {
             aria-labelledby="product-modal-title"
             onClick={(event) => event.stopPropagation()}
             className="
-              relative
-              my-auto
-              max-h-[95vh]
-              w-full
-              max-w-[800px]
-              overflow-y-auto
-              rounded-[12px]
+              relative my-auto max-h-[95vh]
+              w-full max-w-[800px]
+              overflow-y-auto rounded-[12px]
               bg-white
               shadow-[0_25px_80px_rgba(0,0,0,0.30)]
             "
           >
             {/* MODAL HEADER */}
-
-            <div
-              className="
-                sticky
-                top-0
-                z-30
-                flex
-                min-h-[58px]
-                items-center
-                justify-between
-                border-b
-                border-[#DCDDDC]
-                bg-white
-                px-3
-                sm:px-5
-              "
-            >
+            <div className="sticky top-0 z-30 flex min-h-[58px] items-center justify-between border-b border-[#DCDDDC] bg-white px-3 sm:px-5">
               <div className="flex min-w-0 items-center gap-2">
                 <button
                   type="button"
@@ -615,49 +519,22 @@ const ProductsSection = () => {
               </button>
             </div>
 
-            {/* =================================================
-                MODAL CONTENT
-            ================================================= */}
-
+            {/* MODAL CONTENT */}
             <div className="px-4 pb-5 pt-4 sm:px-6">
-              {/* LARGE PRODUCT IMAGE */}
 
+              {/* BIGGER MODAL IMAGE */}
               <div
                 className="
-                  group/image
-                  relative
-                  flex
-                  h-[290px]
-                  w-full
-                  items-center
-                  justify-center
-                  overflow-hidden
-                  rounded-[12px]
-                  border
-                  border-[#E1E5E2]
+                  group/image relative flex
+                  h-[370px] w-full
+                  items-center justify-center
+                  overflow-hidden rounded-[12px]
+                  border border-[#E1E5E2]
                   bg-[#F7F7F5]
-                  sm:h-[360px]
+                  sm:h-[460px] lg:h-[500px]
                 "
               >
-                <span
-                  className="
-                    absolute
-                    left-4
-                    top-4
-                    z-20
-                    rounded-full
-                    border
-                    border-[#DCE5E0]
-                    bg-white
-                    px-3
-                    py-1.5
-                    text-[10px]
-                    font-bold
-                    uppercase
-                    tracking-[0.1em]
-                    text-[#367762]
-                  "
-                >
+                <span className="absolute left-4 top-4 z-20 rounded-full border border-[#DCE5E0] bg-white px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.1em] text-[#367762]">
                   {selectedProduct.category}
                 </span>
 
@@ -665,20 +542,15 @@ const ProductsSection = () => {
                   src={selectedProduct.image}
                   alt={selectedProduct.name}
                   className="
-                    h-[94%]
-                    w-[94%]
-                    object-contain
-                    p-2
+                    h-full w-full object-contain p-1
                     drop-shadow-[0_14px_20px_rgba(25,42,34,0.12)]
-                    transition-transform
-                    duration-500
+                    transition-transform duration-500
                     group-hover/image:scale-[1.05]
                   "
                 />
               </div>
 
               {/* PRODUCT TITLE */}
-
               <div className="mt-4 border-b border-[#E3E6E4] pb-4">
                 <span className="text-[10px] font-bold uppercase tracking-[0.13em] text-orange-600">
                   Mutation Dermacare
@@ -689,10 +561,7 @@ const ProductsSection = () => {
                 </h3>
               </div>
 
-              {/* =================================================
-                  PRODUCT INFORMATION
-              ================================================= */}
-
+              {/* PRODUCT INFORMATION */}
               <div className="mt-5">
                 <SectionHeading>Product Information</SectionHeading>
 
@@ -701,13 +570,9 @@ const ProductsSection = () => {
                     <div
                       key={`${label}-${index}`}
                       className={`
-                        grid
-                        grid-cols-[38%_62%]
-                        gap-3
-                        px-3
-                        py-[8px]
-                        sm:grid-cols-[32%_68%]
-                        sm:px-4
+                        grid grid-cols-[38%_62%]
+                        gap-3 px-3 py-[8px]
+                        sm:grid-cols-[32%_68%] sm:px-4
                         ${
                           index !== selectedProduct.specs.length - 1
                             ? "border-b border-[#EAEBEA]"
@@ -727,10 +592,7 @@ const ProductsSection = () => {
                 </div>
               </div>
 
-              {/* =================================================
-                  KEY FEATURES
-              ================================================= */}
-
+              {/* KEY FEATURES */}
               <div className="mt-5 border-t border-[#E4E7E5] pt-4">
                 <SectionHeading>Key Features</SectionHeading>
 
@@ -739,15 +601,11 @@ const ProductsSection = () => {
                     <div
                       key={feature}
                       className="
-                        flex
-                        items-start
-                        gap-2.5
+                        flex items-start gap-2.5
                         rounded-[7px]
-                        border
-                        border-[#E4E8E5]
+                        border border-[#E4E8E5]
                         bg-[#FAFBFA]
-                        px-3
-                        py-2.5
+                        px-3 py-2.5
                       "
                     >
                       <span className="mt-[1px] flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full bg-[#E4F0EB] text-[#438D76]">
@@ -762,10 +620,7 @@ const ProductsSection = () => {
                 </div>
               </div>
 
-              {/* =================================================
-                  BENEFITS
-              ================================================= */}
-
+              {/* BENEFITS */}
               <div className="mt-5 border-t border-[#E4E7E5] pt-4">
                 <SectionHeading>Benefits</SectionHeading>
 
@@ -775,21 +630,7 @@ const ProductsSection = () => {
                       key={benefit}
                       className="flex items-start gap-3"
                     >
-                      <span
-                        className="
-                          flex
-                          h-[23px]
-                          w-[23px]
-                          shrink-0
-                          items-center
-                          justify-center
-                          rounded-[5px]
-                          bg-[#FFF1E7]
-                          text-[10px]
-                          font-bold
-                          text-orange-600
-                        "
-                      >
+                      <span className="flex h-[23px] w-[23px] shrink-0 items-center justify-center rounded-[5px] bg-[#FFF1E7] text-[10px] font-bold text-orange-600">
                         {String(index + 1).padStart(2, "0")}
                       </span>
 
@@ -801,21 +642,8 @@ const ProductsSection = () => {
                 </div>
               </div>
 
-              {/* =================================================
-                  PRODUCT ENQUIRY
-              ================================================= */}
-
-              <div
-                className="
-                  mt-5
-                  rounded-[10px]
-                  border
-                  border-[#E1E5E2]
-                  bg-[#F7F8F6]
-                  p-3
-                  sm:p-4
-                "
-              >
+              {/* PRODUCT ENQUIRY */}
+              <div className="mt-5 rounded-[10px] border border-[#E1E5E2] bg-[#F7F8F6] p-3 sm:p-4">
                 <span className="text-[10px] font-bold uppercase tracking-[0.12em] text-orange-600">
                   Product Enquiry
                 </span>
@@ -829,28 +657,20 @@ const ProductsSection = () => {
                 </p>
 
                 <div className="mt-3 grid grid-cols-2 gap-2.5">
-                  {/* WHATSAPP */}
 
+                  {/* WHATSAPP */}
                   <a
                     href={getWhatsAppLink()}
                     target="_blank"
                     rel="noreferrer"
                     className="
-                      inline-flex
-                      min-h-[48px]
-                      items-center
-                      justify-center
-                      gap-2
+                      inline-flex min-h-[48px]
+                      items-center justify-center gap-2
                       rounded-[7px]
-                      border
-                      border-[#159A62]
-                      bg-white
-                      px-3
-                      text-[13px]
-                      font-bold
-                      text-[#128A58]
-                      transition-all
-                      duration-300
+                      border border-[#159A62]
+                      bg-white px-3
+                      text-[13px] font-bold text-[#128A58]
+                      transition-all duration-300
                       hover:bg-[#F0FBF6]
                       sm:text-[14px]
                     "
@@ -860,28 +680,19 @@ const ProductsSection = () => {
                       strokeWidth={2.3}
                       className="shrink-0"
                     />
-
                     <span>WhatsApp</span>
                   </a>
 
                   {/* CALL */}
-
                   <a
                     href="tel:+919921269023"
                     className="
-                      inline-flex
-                      min-h-[48px]
-                      items-center
-                      justify-center
-                      gap-2
+                      inline-flex min-h-[48px]
+                      items-center justify-center gap-2
                       rounded-[7px]
-                      bg-[#438D76]
-                      px-3
-                      text-[13px]
-                      font-bold
-                      text-white
-                      transition-all
-                      duration-300
+                      bg-[#438D76] px-3
+                      text-[13px] font-bold text-white
+                      transition-all duration-300
                       hover:bg-[#34735F]
                       sm:text-[14px]
                     "
@@ -891,7 +702,6 @@ const ProductsSection = () => {
                       strokeWidth={2.4}
                       className="shrink-0"
                     />
-
                     <span>Call Now</span>
                   </a>
                 </div>
@@ -901,22 +711,6 @@ const ProductsSection = () => {
         </div>
       )}
     </>
-  );
-};
-
-/* =========================================================
-   SECTION HEADING
-========================================================= */
-
-const SectionHeading = ({ children }) => {
-  return (
-    <div className="flex items-center gap-2.5">
-      <span className="h-[18px] w-[3px] rounded-full bg-orange-500" />
-
-      <h3 className="text-[15px] font-bold leading-[1.4] text-[#17251F] sm:text-[16px]">
-        {children}
-      </h3>
-    </div>
   );
 };
 

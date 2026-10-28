@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import {
   Package,
   Boxes,
-  Palette,
+  Sparkles,
   Tags,
   Truck,
   Layers3,
@@ -28,17 +28,17 @@ const benefits = [
   },
   {
     number: "03",
-    icon: Palette,
-    title: "Custom Packaging",
+    icon: Sparkles,
+    title: "Professional Care Essentials",
     description:
-      "Explore packaging formats and presentation options that align with your salon's product needs.",
+      "Explore skincare, haircare and body care essentials suitable for everyday parlour and salon requirements.",
   },
   {
     number: "04",
     icon: Tags,
-    title: "Private Label Options",
+    title: "Beauty Product Solutions",
     description:
-      "Build your own branded beauty product range with private label and custom branding support.",
+      "Find practical beauty and personal care products to support your salon services and professional business needs.",
   },
   {
     number: "05",
@@ -52,7 +52,7 @@ const benefits = [
     icon: Layers3,
     title: "One-Stop Solutions",
     description:
-      "Bring your skincare, haircare, packaging and branding requirements together with one business partner.",
+      "Bring your skincare, haircare and body care product requirements together with one business partner.",
   },
 ];
 
@@ -91,7 +91,7 @@ const WhyPartnerSalon = () => {
           <p className="max-w-[380px] text-[13px] leading-[1.85] text-white/55 sm:text-[15px]">
             More than product sourcing. We help beauty
             businesses explore practical solutions for
-            professional care, packaging and branding.
+            professional skincare, haircare and personal care needs.
           </p>
         </div>
 

@@ -7,10 +7,7 @@ const WhyChooseUs = () => {
     "B2B & Bulk Order Support",
     "Hotel Amenities Solutions",
     "Parlour & Salon Solutions",
-    "Private Label Manufacturing",
     "Export Solutions",
-    "Custom Packaging",
-    "Custom Branding",
     "Reliable Supply",
     "One-Stop Solutions",
   ];
@@ -176,7 +173,7 @@ const WhyChooseUs = () => {
               />
             </div>
 
-            {/* 10 CORE STRENGTHS */}
+            {/* CORE STRENGTHS */}
             <div className="mt-7 grid sm:grid-cols-2 sm:gap-x-9">
               {reasons.map((reason, index) => (
                 <div
@@ -210,7 +207,6 @@ const WhyChooseUs = () => {
                 "Personal Skin Care",
                 "Hospitality",
                 "Parlour & Salon",
-                "Private Label",
                 "B2B",
                 "Export",
               ].map((item, index) => (

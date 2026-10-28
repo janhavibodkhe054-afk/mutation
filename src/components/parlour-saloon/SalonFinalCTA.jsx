@@ -1,30 +1,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  ArrowUpRight,
-  Package,
-  UsersRound,
-  Tags,
-} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const SalonFinalCTA = () => {
-  const features = [
-    {
-      icon: Package,
-      title: "Professional Care",
-    },
-    {
-      icon: UsersRound,
-      title: "Bulk Supply",
-    },
-    {
-      icon: Tags,
-      title: "Private Label",
-    },
-  ];
-
   return (
     <section
       className="
@@ -191,8 +171,6 @@ const SalonFinalCTA = () => {
             />
           </Link>
         </motion.div>
-
-        
       </div>
     </section>
   );

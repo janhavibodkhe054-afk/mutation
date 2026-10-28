@@ -1,3 +1,4 @@
+
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -27,7 +28,6 @@ const TravelCareCTA = () => {
 
       <div className="relative mx-auto max-w-[1380px] px-5 py-16 sm:px-7 sm:py-20 lg:px-10 lg:py-24 xl:px-14">
         <div className="relative border-y border-[#DCE2DE] py-11 sm:py-14 lg:py-16">
-          
           {/* Top Accent */}
           <div className="absolute left-0 top-[-2px] flex h-[3px]">
             <span className="w-[70px] bg-orange-500" />
@@ -35,7 +35,6 @@ const TravelCareCTA = () => {
           </div>
 
           <div className="grid items-center gap-8 lg:grid-cols-[1fr_auto] lg:gap-16">
-            
             {/* CONTENT */}
             <div>
               <div className="mb-4 flex items-center gap-3">
@@ -52,8 +51,9 @@ const TravelCareCTA = () => {
               </h2>
 
               <p className="mt-4 max-w-[650px] text-[15px] font-medium leading-[1.75] text-[#5C6861] sm:text-[16px]">
-                Tell us your product, packaging and branding requirements and
-                let our team help you with the right travel care solution.
+                Tell us your travel care product requirements and let our team
+                help you with suitable solutions for your business and bulk
+                order needs.
               </p>
             </div>
 
@@ -83,7 +83,6 @@ const TravelCareCTA = () => {
                 "
               >
                 Get Bulk Quote
-
                 <span
                   className="
                     flex h-[30px] w-[30px]
@@ -110,12 +109,6 @@ const TravelCareCTA = () => {
 
             <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#758179]">
               Product Selection
-            </span>
-
-            <span className="h-[4px] w-[4px] rounded-full bg-[#438D76]" />
-
-            <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#758179]">
-              Custom Branding
             </span>
 
             <span className="hidden h-[4px] w-[4px] rounded-full bg-[#438D76] sm:block" />

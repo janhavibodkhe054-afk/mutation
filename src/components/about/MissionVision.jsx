@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Target, Eye } from "lucide-react";
 
@@ -50,13 +51,13 @@ const MissionVision = () => {
         }
       `}</style>
 
-      {/* =====================================================
-          BACKGROUND DECOR
-      ===================================================== */}
+      {/* BACKGROUND DECOR */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div
           className="purpose-motion absolute -right-[170px] -top-[170px] h-[390px] w-[390px] rounded-full border border-[#438D76]/10"
-          style={{ animation: "purposeRotate 35s linear infinite" }}
+          style={{
+            animation: "purposeRotate 35s linear infinite",
+          }}
         >
           <span className="absolute bottom-[65px] left-[60px] h-[8px] w-[8px] rounded-full bg-orange-500" />
         </div>
@@ -66,17 +67,14 @@ const MissionVision = () => {
         </span>
       </div>
 
-      {/* =====================================================
-          CONTENT
-      ===================================================== */}
+      {/* CONTENT */}
       <div className="relative mx-auto max-w-[1380px] px-5 py-14 sm:px-7 sm:py-16 lg:px-10 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16 xl:gap-20">
 
-          {/* =================================================
-              LEFT INTRO
-          ================================================= */}
+          {/* LEFT INTRO */}
           <div className="relative lg:pt-5">
-            {/* Eyebrow */}
+
+            {/* EYEBROW */}
             <div className="flex items-center gap-3">
               <div className="relative h-[2px] w-[38px] overflow-hidden bg-orange-500/25">
                 <span
@@ -92,7 +90,7 @@ const MissionVision = () => {
               </span>
             </div>
 
-            {/* Heading */}
+            {/* HEADING */}
             <h2 className="mt-5 max-w-[470px] text-[34px] font-bold leading-[1.1] tracking-[-0.04em] text-[#1D2522] sm:text-[40px] lg:text-[44px] xl:text-[47px]">
               Driven By
               <span className="block">Purpose.</span>
@@ -104,7 +102,7 @@ const MissionVision = () => {
               </span>
             </h2>
 
-            {/* Decorative Detail */}
+            {/* DECORATIVE DETAIL */}
             <div className="mt-8 flex items-center gap-4">
               <span className="h-px w-[60px] bg-[#CBC7C0]" />
 
@@ -121,14 +119,10 @@ const MissionVision = () => {
             </div>
           </div>
 
-          {/* =================================================
-              RIGHT MISSION + VISION
-          ================================================= */}
+          {/* RIGHT MISSION + VISION */}
           <div className="relative">
 
-            {/* ===============================================
-                MISSION
-            =============================================== */}
+            {/* MISSION */}
             <div
               className="
                 relative
@@ -144,7 +138,7 @@ const MissionVision = () => {
                 lg:px-10
               "
             >
-              {/* Giant M */}
+              {/* GIANT M */}
               <span
                 aria-hidden="true"
                 className="
@@ -164,9 +158,11 @@ const MissionVision = () => {
               </span>
 
               <div className="relative">
-                {/* Top */}
+
+                {/* TOP */}
                 <div className="flex items-center justify-between gap-5">
                   <div className="flex items-center gap-3">
+
                     <div className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-[#438D76] text-white">
                       <Target size={19} strokeWidth={1.8} />
                     </div>
@@ -185,7 +181,7 @@ const MissionVision = () => {
                   <div className="hidden h-px flex-1 bg-[#E1DED8] sm:block" />
                 </div>
 
-                {/* Title */}
+                {/* TITLE */}
                 <h3 className="mt-6 max-w-[580px] text-[23px] font-bold leading-[1.25] tracking-[-0.025em] text-[#1D2522] sm:text-[27px] lg:text-[29px]">
                   Making Quality Care
                   <span className="block text-[#438D76]">
@@ -193,21 +189,21 @@ const MissionVision = () => {
                   </span>
                 </h3>
 
-                {/* Description */}
+                {/* UPDATED MISSION DESCRIPTION */}
                 <p className="mt-4 max-w-[650px] text-[15px] leading-[1.8] text-[#56605B] sm:text-[16px]">
-                  Our mission is to provide quality personal skin care products and
-                  dependable business solutions that meet the evolving needs of
-                  consumers, brands and businesses.
+                  To deliver thoughtfully developed skincare, haircare
+                  and personal care products that bring quality,
+                  comfort and convenience to everyday life, while
+                  meeting the diverse needs of individuals,
+                  hospitality businesses and beauty professionals.
                 </p>
               </div>
 
-              {/* Bottom Accent */}
+              {/* BOTTOM ACCENT */}
               <div className="absolute bottom-0 left-0 h-[3px] w-[90px] bg-[#438D76]" />
             </div>
 
-            {/* ===============================================
-                CONNECTION
-            =============================================== */}
+            {/* CONNECTION */}
             <div className="relative z-20 mx-auto -my-[1px] hidden h-[45px] w-px bg-[#CAC6BF] lg:block">
               <span
                 className="
@@ -228,9 +224,7 @@ const MissionVision = () => {
               />
             </div>
 
-            {/* ===============================================
-                VISION
-            =============================================== */}
+            {/* VISION */}
             <div
               className="
                 relative
@@ -249,7 +243,7 @@ const MissionVision = () => {
                 lg:px-10
               "
             >
-              {/* Giant V */}
+              {/* GIANT V */}
               <span
                 aria-hidden="true"
                 className="
@@ -269,9 +263,11 @@ const MissionVision = () => {
               </span>
 
               <div className="relative">
-                {/* Top */}
+
+                {/* TOP */}
                 <div className="flex items-center justify-between gap-5">
                   <div className="flex items-center gap-3">
+
                     <div className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-orange-500 text-white">
                       <Eye size={19} strokeWidth={1.8} />
                     </div>
@@ -290,7 +286,7 @@ const MissionVision = () => {
                   <div className="hidden h-px flex-1 bg-white/10 sm:block" />
                 </div>
 
-                {/* Title */}
+                {/* TITLE */}
                 <h3 className="mt-6 max-w-[580px] text-[23px] font-bold leading-[1.25] tracking-[-0.025em] text-white sm:text-[27px] lg:text-[29px]">
                   A Trusted Partner for
                   <span className="block text-orange-400">
@@ -298,15 +294,17 @@ const MissionVision = () => {
                   </span>
                 </h3>
 
-                {/* Description */}
+                {/* UPDATED VISION DESCRIPTION */}
                 <p className="mt-4 max-w-[660px] text-[15px] leading-[1.8] text-white/75 sm:text-[16px]">
-                  We aim to become a trusted cosmetic manufacturing and B2B
-                  solutions partner, recognised for quality, flexibility,
-                  dependable supply and long-term relationships.
+                  To establish Mutation Dermacare as a trusted name
+                  in personal care and hospitality solutions,
+                  recognised for consistent quality, customer
+                  satisfaction, dependable service and lasting
+                  business relationships.
                 </p>
               </div>
 
-              {/* Bottom Accent */}
+              {/* BOTTOM ACCENT */}
               <div className="absolute bottom-0 left-0 h-[3px] w-[90px] bg-orange-500" />
             </div>
           </div>

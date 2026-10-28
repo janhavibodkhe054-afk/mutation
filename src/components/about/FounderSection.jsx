@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const FounderSection = () => {
@@ -70,7 +71,7 @@ const FounderSection = () => {
         }
       `}</style>
 
-      {/* Subtle Background Detail */}
+      {/* SUBTLE BACKGROUND DETAIL */}
       <div
         aria-hidden="true"
         className="
@@ -96,7 +97,7 @@ const FounderSection = () => {
           ========================== */}
           <div className="relative mx-auto w-full max-w-[520px] lg:mx-0">
 
-            {/* Animated Orange Line */}
+            {/* ANIMATED ORANGE LINE */}
             <div className="absolute -left-4 top-8 z-10 h-[72%] w-[5px] overflow-hidden bg-orange-500/20 sm:-left-5">
               <div
                 className="
@@ -114,7 +115,7 @@ const FounderSection = () => {
               />
             </div>
 
-            {/* Image */}
+            {/* FOUNDER IMAGE */}
             <div className="group overflow-hidden rounded-[20px] bg-[#F4F1ED]">
               <img
                 src="/deepali.webp"
@@ -134,7 +135,7 @@ const FounderSection = () => {
               />
             </div>
 
-            {/* Founder Name Strip */}
+            {/* FOUNDER NAME STRIP */}
             <div
               className="
                 relative
@@ -152,7 +153,7 @@ const FounderSection = () => {
                 sm:px-6
               "
             >
-              {/* Animated top accent */}
+              {/* ANIMATED TOP ACCENT */}
               <div className="absolute left-0 top-0 h-[2px] w-full overflow-hidden bg-[#E7E5E1]">
                 <span
                   className="
@@ -185,7 +186,7 @@ const FounderSection = () => {
           ========================== */}
           <div className="relative lg:pl-2">
 
-            {/* Eyebrow */}
+            {/* EYEBROW */}
             <div className="mb-5 flex items-center gap-3">
               <div className="relative h-[2px] w-[36px] overflow-hidden bg-orange-500/25">
                 <span
@@ -209,7 +210,7 @@ const FounderSection = () => {
               </span>
             </div>
 
-            {/* Heading */}
+            {/* HEADING */}
             <h2
               className="
                 max-w-[650px]
@@ -223,16 +224,16 @@ const FounderSection = () => {
                 lg:text-[46px]
               "
             >
-              Building Brands With
+              Building Care Solutions With
               <span className="block text-[#438D76]">
                 Purpose & Passion.
               </span>
             </h2>
 
-            {/* Quote */}
+            {/* QUOTE */}
             <div className="relative mt-8 border-l-[3px] border-orange-500 pl-5 sm:pl-7">
 
-              {/* Animated Quote Mark */}
+              {/* ANIMATED QUOTE MARK */}
               <span
                 aria-hidden="true"
                 className="
@@ -254,21 +255,25 @@ const FounderSection = () => {
               </span>
 
               <p className="relative max-w-[690px] text-[17px] font-medium leading-[1.8] text-[#303A35] sm:text-[18px]">
-                “We believe every brand deserves the right products, the right
-                support and the freedom to create something truly meaningful.
-                Our goal is to make private label manufacturing simple,
-                reliable and accessible.”
+                “We believe quality personal care should be accessible,
+                reliable and thoughtfully developed. Our vision is to
+                provide skincare, haircare and hospitality solutions
+                that support everyday care while helping businesses
+                serve their customers with confidence.”
               </p>
             </div>
 
-            {/* Description */}
+            {/* DESCRIPTION */}
             <p className="mt-7 max-w-[690px] text-[15px] leading-[1.9] text-[#59625D] sm:text-[16px]">
               With a strong focus on quality, innovation and long-term
-              partnerships, we help businesses turn their personal skin care ideas
-              into products that are ready to build a brand around.
+              partnerships, Mutation Dermacare offers a diverse range
+              of personal skin care products, hotel amenities, travel
+              care kits and professional parlour and salon solutions.
+              Our aim is to deliver practical, dependable care products
+              for individuals and businesses across different industries.
             </p>
 
-            {/* Animated Bottom Detail */}
+            {/* ANIMATED BOTTOM DETAIL */}
             <div className="mt-9 flex h-[16px] items-center gap-4">
               <span className="h-px w-[70px] bg-[#CDD2CF]" />
 

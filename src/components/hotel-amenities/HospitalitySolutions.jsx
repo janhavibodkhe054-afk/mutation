@@ -1,9 +1,10 @@
+
 import React from "react";
 import {
   BadgeCheck,
   Layers3,
   Package,
-  Palette,
+  Scissors,
   Boxes,
   Handshake,
   ArrowUpRight,
@@ -27,16 +28,16 @@ const solutions = [
   {
     number: "03",
     icon: Package,
-    title: "Custom Packaging",
+    title: "Guest-Care Essentials",
     description:
-      "Packaging formats designed around hospitality needs.",
+      "Convenient personal care essentials designed for hospitality needs.",
   },
   {
     number: "04",
-    icon: Palette,
-    title: "Custom Branding",
+    icon: Scissors,
+    title: "Parlour & Salon Solutions",
     description:
-      "Integrate your hotel logo, branding and visual identity.",
+      "Professional skincare, haircare and beauty care products for parlours and salons.",
   },
   {
     number: "05",
@@ -96,9 +97,9 @@ const HospitalitySolutions = () => {
 
             {/* Description */}
             <p className="mt-6 max-w-[510px] text-[15px] font-medium leading-[1.8] text-[#5B6660] sm:text-[16px]">
-              We deliver dependable personal care solutions engineered
+              We deliver dependable personal care solutions designed
               specifically for luxury hotels, resorts, homestays and boutique
-              hospitality brands.
+              hospitality businesses.
             </p>
 
             {/* Small visual accent */}
@@ -115,8 +116,8 @@ const HospitalitySolutions = () => {
               </span>
 
               <p className="mt-2 max-w-[320px] text-[13px] font-medium leading-[1.65] text-[#66716B]">
-                Products, packaging, branding and bulk supply — all under one
-                dependable partnership.
+                Personal care products, guest essentials and reliable bulk
+                supply — all under one dependable partnership.
               </p>
             </div>
           </div>

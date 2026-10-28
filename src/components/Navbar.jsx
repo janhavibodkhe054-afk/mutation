@@ -1,12 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Menu, X, Phone, Mail } from "lucide-react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaYoutube,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
@@ -16,9 +11,14 @@ const navLinks = [
   { label: "Hotel Amenities", path: "/hotel-amenities" },
   { label: "Travel Care Kits", path: "/travel-care-kits" },
   { label: "Parlour & Salon", path: "/parlour-salon" },
-  { label: "Private Label", path: "/private-label" },
   { label: "Contact", path: "/contact" },
 ];
+
+// Replace with Mutation Dermacare's actual profile links
+const socialLinks = {
+  facebook: "https://www.facebook.com/watch/61591465859863/",
+  instagram: "https://www.instagram.com/mutation_dermacare.28/",
+};
 
 const Navbar = () => {
   const location = useLocation();
@@ -94,20 +94,18 @@ const Navbar = () => {
 
             {/* SOCIAL ICONS */}
             <div className="flex items-center gap-2">
-              <SocialIcon href="#" label="Facebook">
+              <SocialIcon
+                href={socialLinks.facebook}
+                label="Facebook"
+              >
                 <FaFacebookF />
               </SocialIcon>
 
-              <SocialIcon href="#" label="Instagram">
+              <SocialIcon
+                href={socialLinks.instagram}
+                label="Instagram"
+              >
                 <FaInstagram />
-              </SocialIcon>
-
-              <SocialIcon href="#" label="YouTube">
-                <FaYoutube />
-              </SocialIcon>
-
-              <SocialIcon href="#" label="LinkedIn">
-                <FaLinkedinIn />
               </SocialIcon>
             </div>
           </div>
@@ -297,7 +295,10 @@ const Navbar = () => {
               href="tel:+919921269023"
               className="flex items-center gap-3 text-[13px] font-medium text-[#45534D]"
             >
-              <Phone size={15} className="text-[#F07832]" />
+              <Phone
+                size={15}
+                className="text-[#F07832]"
+              />
               +91 99212 69023
             </a>
 
@@ -305,27 +306,28 @@ const Navbar = () => {
               href="mailto:dr.prit23@gmail.com"
               className="mt-4 flex items-center gap-3 text-[13px] font-medium text-[#45534D]"
             >
-              <Mail size={15} className="text-[#F07832]" />
+              <Mail
+                size={15}
+                className="text-[#F07832]"
+              />
               dr.prit23@gmail.com
             </a>
           </div>
 
-          {/* MOBILE SOCIAL */}
+          {/* MOBILE SOCIAL ICONS */}
           <div className="mt-6 flex items-center gap-2">
-            <MobileSocial href="#" label="Facebook">
+            <MobileSocial
+              href={socialLinks.facebook}
+              label="Facebook"
+            >
               <FaFacebookF />
             </MobileSocial>
 
-            <MobileSocial href="#" label="Instagram">
+            <MobileSocial
+              href={socialLinks.instagram}
+              label="Instagram"
+            >
               <FaInstagram />
-            </MobileSocial>
-
-            <MobileSocial href="#" label="YouTube">
-              <FaYoutube />
-            </MobileSocial>
-
-            <MobileSocial href="#" label="LinkedIn">
-              <FaLinkedinIn />
             </MobileSocial>
           </div>
         </div>
@@ -365,14 +367,19 @@ const SocialIcon = ({ href, label, children }) => (
   <a
     href={href}
     target="_blank"
-    rel="noreferrer"
+    rel="noopener noreferrer"
     aria-label={label}
-    className="
+    className={`
       flex h-[31px] w-[31px] items-center justify-center
-      rounded-full bg-white/15 text-[13px] text-white
+      rounded-full text-[14px] text-white
       transition-all duration-200
-      hover:bg-white hover:text-[#F07832]
-    "
+      hover:scale-110
+      ${
+        label === "Facebook"
+          ? "bg-[#1877F2]"
+          : "bg-gradient-to-tr from-[#FEDA75] via-[#DD2A7B] to-[#8134AF]"
+      }
+    `}
   >
     {children}
   </a>
@@ -402,14 +409,19 @@ const MobileSocial = ({ href, label, children }) => (
   <a
     href={href}
     target="_blank"
-    rel="noreferrer"
+    rel="noopener noreferrer"
     aria-label={label}
-    className="
+    className={`
       flex h-9 w-9 items-center justify-center
-      rounded-full bg-[#F07832] text-[14px]
-      text-white transition-colors
-      hover:bg-[#438D76]
-    "
+      rounded-full text-[15px] text-white
+      transition-all duration-200
+      hover:scale-110
+      ${
+        label === "Facebook"
+          ? "bg-[#1877F2]"
+          : "bg-gradient-to-tr from-[#FEDA75] via-[#DD2A7B] to-[#8134AF]"
+      }
+    `}
   >
     {children}
   </a>

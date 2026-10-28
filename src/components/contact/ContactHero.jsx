@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 
@@ -107,9 +108,9 @@ const ContactHero = () => {
 
             {/* Description */}
             <p className="mt-6 max-w-[650px] text-[16px] font-medium leading-[1.8] text-[#4E5B55] sm:text-[17px]">
-              Tell us about your requirements and let our team help you create
-              the right products, packaging and manufacturing solution for
-              your brand.
+              Tell us about your personal care, hotel amenities, travel care kits
+              or bulk order requirements. Our team is here to help you find
+              suitable product solutions for your business needs.
             </p>
 
             {/* Bottom small label */}
@@ -127,7 +128,7 @@ const ContactHero = () => {
               <span className="h-[4px] w-[4px] rounded-full bg-orange-500" />
 
               <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#53645C]">
-                Private Label
+                Travel Care Kits
               </span>
 
               <span className="h-[4px] w-[4px] rounded-full bg-orange-500" />
@@ -298,7 +299,7 @@ const ContactHero = () => {
         </div>
       </div>
 
-      {/* Brand bottom strip */}
+      {/* Bottom strip */}
       <div className="flex h-[4px]">
         <span className="w-[18%] bg-orange-500" />
         <span className="flex-1 bg-[#438D76]" />

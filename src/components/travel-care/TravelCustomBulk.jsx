@@ -1,8 +1,8 @@
+
 import React from "react";
 import {
   ArrowUpRight,
   PackageSearch,
-  BadgeCheck,
   Boxes,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -16,12 +16,6 @@ const features = [
   },
   {
     no: "02",
-    icon: BadgeCheck,
-    title: "Custom Branding",
-    text: "Create travel kits aligned with your business and brand requirements.",
-  },
-  {
-    no: "03",
     icon: Boxes,
     title: "Bulk Supply",
     text: "Travel care kits available for business and bulk order requirements.",
@@ -35,7 +29,7 @@ const TravelCustomBulk = () => {
     navigate("/contact", {
       state: {
         requirement: "travel-care",
-        enquiry: "Custom Travel Kits - Bulk Order",
+        enquiry: "Travel Care Kits - Bulk Order",
       },
     });
   };
@@ -94,10 +88,9 @@ const TravelCustomBulk = () => {
       <div className="relative mx-auto max-w-[1380px] px-5 py-16 sm:px-7 sm:py-20 lg:px-10 lg:py-24 xl:px-14">
         <div className="grid overflow-hidden border border-white/10 lg:grid-cols-[1.08fr_0.92fr]">
 
-          {/* =================================================
-              LEFT CONTENT
-          ================================================= */}
+          {/* LEFT CONTENT */}
           <div className="relative bg-[#203129] px-6 py-9 sm:px-9 sm:py-11 lg:px-11 lg:py-12 xl:px-12">
+
             {/* Eyebrow */}
             <div className="flex items-center gap-3">
               <span
@@ -108,7 +101,7 @@ const TravelCustomBulk = () => {
               />
 
               <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-orange-400">
-                Custom & Bulk
+                Travel Care & Bulk Supply
               </span>
 
               <span className="h-px w-[38px] bg-white/20" />
@@ -116,7 +109,7 @@ const TravelCustomBulk = () => {
 
             {/* Heading */}
             <h2 className="mt-5 max-w-[650px] text-[33px] font-bold leading-[1.08] tracking-[-0.04em] text-white sm:text-[40px] lg:text-[44px]">
-              Custom Travel Kits
+              Travel Care Kits
               <span className="block text-[#86BCA9]">
                 Available for Bulk Orders.
               </span>
@@ -124,14 +117,12 @@ const TravelCustomBulk = () => {
 
             {/* Description */}
             <p className="mt-5 max-w-[650px] text-[15px] font-medium leading-[1.8] text-[#D0DAD5] sm:text-[16px]">
-              Create travel care kits according to your product, packaging and
-              branding requirements. Ideal for hotels, travel companies,
-              corporates and promotional campaigns.
+              Explore practical travel care kits with essential personal care
+              products for hotels, travel companies, corporates and promotional
+              campaigns. Available for business and bulk order requirements.
             </p>
 
-            {/* =================================================
-                FEATURES
-            ================================================= */}
+            {/* FEATURES */}
             <div className="mt-9 border-t border-white/15">
               {features.map((item) => {
                 const Icon = item.icon;
@@ -186,23 +177,13 @@ const TravelCustomBulk = () => {
                 type="button"
                 onClick={handleQuote}
                 className="
-                  group
-                  inline-flex
-                  min-h-[54px]
-                  items-center
-                  justify-center
-                  gap-5
-                  bg-orange-500
-                  px-7
-                  text-[11px]
-                  font-bold
-                  uppercase
-                  tracking-[0.15em]
-                  text-white
-                  transition-all
-                  duration-300
-                  hover:bg-[#5DAA93]
-                  sm:px-8
+                  group inline-flex min-h-[54px]
+                  items-center justify-center gap-5
+                  bg-orange-500 px-7
+                  text-[11px] font-bold uppercase
+                  tracking-[0.15em] text-white
+                  transition-all duration-300
+                  hover:bg-[#5DAA93] sm:px-8
                 "
               >
                 Get Bulk Quote
@@ -218,13 +199,11 @@ const TravelCustomBulk = () => {
             </div>
           </div>
 
-          {/* =================================================
-              RIGHT IMAGE
-          ================================================= */}
+          {/* RIGHT IMAGE */}
           <div className="relative min-h-[430px] overflow-hidden sm:min-h-[500px] lg:min-h-full">
             <img
               src="/travel-care-kit.png"
-              alt="Custom travel care kits for bulk orders"
+              alt="Travel care kits for bulk orders"
               className="bulk-motion absolute inset-0 h-full w-full object-cover"
               style={{
                 animation: "bulkImageZoom 12s ease-in-out infinite",
@@ -240,7 +219,7 @@ const TravelCustomBulk = () => {
               </span>
 
               <span className="mt-1 block text-[14px] font-bold text-[#24332C]">
-                Custom Travel Kits
+                Travel Care Kits
               </span>
             </div>
 
@@ -254,12 +233,6 @@ const TravelCustomBulk = () => {
                 <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
                   <span className="text-[13px] font-bold text-white">
                     Product Selection
-                  </span>
-
-                  <span className="h-[4px] w-[4px] rounded-full bg-orange-400" />
-
-                  <span className="text-[13px] font-bold text-white">
-                    Custom Branding
                   </span>
 
                   <span className="h-[4px] w-[4px] rounded-full bg-orange-400" />

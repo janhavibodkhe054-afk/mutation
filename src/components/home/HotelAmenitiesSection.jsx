@@ -1,27 +1,36 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 /* =========================================================
-   HOME PAGE — SELECTED HOTEL AMENITIES
+   HOME PAGE — HOTEL AMENITIES
 ========================================================= */
 
 const amenities = [
   {
     name: "Hair Shampoo",
-    image: "/hair-shampoo.webp",
+    image: "/hair-shampoo.png",
   },
   {
     name: "Hair Conditioner",
-    image: "/hair-conditioner.webp",
+    image: "/hair-conditioner.png",
   },
   {
     name: "Shower Gel",
-    image: "/shower-gell.webp",
+    image: "/shower-gell.png",
   },
   {
     name: "Face Wash",
-    image: "/face-wash.webp",
+    image: "/face-wash.png",
+  },
+  {
+    name: "Moisturiser",
+    image: "/moisturiser.png",
+  },
+  {
+    name: "Hair Oil",
+    image: "/hairoil.png",
   },
   {
     name: "Hotel Dental Kit",
@@ -31,14 +40,32 @@ const amenities = [
     name: "Hotel Disposable Slippers",
     image: "/slippers.png",
   },
+  {
+    name: "Hotel Shower Cap",
+    image: "/cap.png",
+  },
+  {
+    name: "Hotel Shaving Kit",
+    image: "/shaving-kit.png",
+  },
+  {
+    name: "Baby Shampoo",
+    image: "/baby-shampoo.png",
+  },
+  {
+    name: "Baby Lotion",
+    image: "/baby-lotion.png",
+  },
 ];
 
 const HotelAmenitiesSection = () => {
-  // Duplicate items for seamless infinite slider
+  // Duplicate products for seamless infinite slider
   const sliderItems = [...amenities, ...amenities];
 
   return (
     <section className="relative overflow-hidden bg-white py-14 sm:py-16 lg:py-[72px]">
+
+      {/* SLIDER ANIMATION */}
       <style>{`
         @keyframes hotelAmenitiesScroll {
           from {
@@ -51,7 +78,7 @@ const HotelAmenitiesSection = () => {
         }
 
         .hotel-amenities-track {
-          animation: hotelAmenitiesScroll 25s linear infinite;
+          animation: hotelAmenitiesScroll 45s linear infinite;
           will-change: transform;
         }
 
@@ -68,11 +95,12 @@ const HotelAmenitiesSection = () => {
 
       <div className="mx-auto max-w-[1400px] px-5 sm:px-7 lg:px-10">
 
-        {/* =====================================================
+        {/* =========================
             HEADER
-        ====================================================== */}
+        ========================== */}
 
         <div className="mx-auto max-w-[820px] text-center">
+
           <div className="flex items-center justify-center gap-3">
             <span className="h-px w-8 bg-[#BFC8C3]" />
 
@@ -105,8 +133,7 @@ const HotelAmenitiesSection = () => {
 
           <p
             className="
-              mx-auto
-              mt-4
+              mx-auto mt-4
               max-w-[650px]
               text-[15px]
               font-medium
@@ -120,80 +147,63 @@ const HotelAmenitiesSection = () => {
           </p>
         </div>
 
-        {/* =====================================================
+        {/* =========================
             AUTO MOVING SLIDER
-        ====================================================== */}
+        ========================== */}
 
         <div className="hotel-amenities-slider relative mt-9 overflow-hidden sm:mt-11">
 
-          {/* LEFT WHITE FADE */}
-
+          {/* LEFT FADE */}
           <div
             aria-hidden="true"
             className="
               pointer-events-none
-              absolute
-              bottom-0
-              left-0
-              top-0
-              z-20
+              absolute bottom-0 left-0 top-0 z-20
               w-[22px]
               bg-gradient-to-r
-              from-white
-              to-transparent
+              from-white to-transparent
               sm:w-[50px]
             "
           />
 
-          {/* RIGHT WHITE FADE */}
-
+          {/* RIGHT FADE */}
           <div
             aria-hidden="true"
             className="
               pointer-events-none
-              absolute
-              bottom-0
-              right-0
-              top-0
-              z-20
+              absolute bottom-0 right-0 top-0 z-20
               w-[22px]
               bg-gradient-to-l
-              from-white
-              to-transparent
+              from-white to-transparent
               sm:w-[50px]
             "
           />
 
-          {/* =================================================
-              SLIDER TRACK
-          ================================================= */}
-
+          {/* SLIDER TRACK */}
           <div className="hotel-amenities-track flex w-max">
+
             {sliderItems.map((item, index) => (
               <div
                 key={`${item.name}-${index}`}
                 className="
-                  w-[50vw]
+                  w-[65vw]
                   shrink-0
                   px-[6px]
-                  sm:w-[33.333vw]
+                  sm:w-[40vw]
                   sm:px-2
-                  lg:w-[25vw]
+                  lg:w-[28vw]
                   lg:px-2.5
-                  xl:w-[300px]
+                  xl:w-[330px]
                 "
               >
                 <div className="group">
 
-                  {/* =========================================
-                      PRODUCT CARD
-                  ========================================== */}
-
+                  {/* PRODUCT CARD */}
                   <div
                     className="
                       relative
                       flex
-                      h-[230px]
+                      h-[285px]
                       items-center
                       justify-center
                       overflow-hidden
@@ -206,32 +216,14 @@ const HotelAmenitiesSection = () => {
                       group-hover:-translate-y-[4px]
                       group-hover:border-[#C9D6CF]
                       group-hover:shadow-[0_18px_40px_rgba(31,52,42,0.09)]
-                      sm:h-[270px]
-                      lg:h-[300px]
+                      sm:h-[320px]
+                      lg:h-[350px]
                     "
                   >
-                    {/* SOFT INNER BACKGROUND */}
 
-                    <div
-                      className="
-                        absolute
-                        left-1/2
-                        top-1/2
-                        h-[72%]
-                        w-[72%]
-                        -translate-x-1/2
-                        -translate-y-1/2
-                        rounded-full
-                        bg-[#F6F7F5]
-                        transition-all
-                        duration-500
-                        group-hover:scale-[1.06]
-                        group-hover:bg-[#EFF4F1]
-                      "
-                    />
+                    
 
                     {/* TOP ACCENTS */}
-
                     <div className="absolute left-5 top-5 flex items-center gap-2">
                       <span className="h-[7px] w-[7px] rounded-full bg-[#F07832]" />
 
@@ -239,30 +231,26 @@ const HotelAmenitiesSection = () => {
                     </div>
 
                     {/* PRODUCT IMAGE */}
-
                     <img
                       src={item.image}
                       alt={item.name}
                       loading="lazy"
                       draggable="false"
                       className="
-                        relative
-                        z-10
-                        h-[84%]
-                        w-[84%]
+                        relative z-10
+                        h-[96%]
+                        w-[96%]
                         object-contain
-                        p-3
-                        drop-shadow-[0_12px_14px_rgba(28,45,37,0.10)]
+                        p-1
                         transition-all
                         duration-500
                         ease-out
                         group-hover:-translate-y-[4px]
-                        group-hover:scale-[1.04]
+                        group-hover:scale-[1.05]
                       "
                     />
 
                     {/* HOVER LINE */}
-
                     <span
                       className="
                         absolute
@@ -280,11 +268,9 @@ const HotelAmenitiesSection = () => {
                     />
                   </div>
 
-                  {/* =========================================
-                      PRODUCT INFORMATION
-                  ========================================== */}
-
+                  {/* PRODUCT INFORMATION */}
                   <div className="px-1 pt-4 text-center">
+
                     <span
                       className="
                         text-[9px]
@@ -317,17 +303,17 @@ const HotelAmenitiesSection = () => {
                 </div>
               </div>
             ))}
+
           </div>
         </div>
 
-        {/* =====================================================
+        {/* =========================
             BOTTOM CTA
-        ====================================================== */}
+        ========================== */}
 
         <div className="mt-9 flex flex-col items-center text-center sm:mt-10">
 
           {/* SMALL ACCENT */}
-
           <div className="mb-4 flex items-center gap-3">
             <span className="h-px w-8 bg-[#BEC9C3]" />
 
