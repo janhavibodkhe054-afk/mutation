@@ -4,7 +4,6 @@ import {
   Hotel,
   Plane,
   Scissors,
-  Rocket,
   Network,
   Building2,
 } from "lucide-react";
@@ -36,14 +35,6 @@ const businesses = [
   },
   {
     no: "04",
-    icon: Rocket,
-    title: "Startups",
-    description:
-      "Product, branding and manufacturing support for emerging businesses.",
-    tone: "green",
-  },
-  {
-    no: "05",
     icon: Network,
     title: "Distributors",
     description:
@@ -51,16 +42,24 @@ const businesses = [
     tone: "green",
   },
   {
-    no: "06",
+    no: "05",
     icon: Building2,
     title: "Corporate Businesses",
     description:
-      "Customised personal skin care solutions for organisational requirements.",
+      "Personal skin care solutions for organisational requirements.",
     tone: "orange",
   },
 ];
 
 const WhoWeServeSection = () => {
+  const bottomItems = [
+    "Hospitality",
+    "Travel",
+    "Parlour & Salons",
+    "Distribution",
+    "Corporate",
+  ];
+
   return (
     <section className="relative overflow-hidden bg-[#F8F5F0]">
       <style>{`
@@ -144,7 +143,7 @@ const WhoWeServeSection = () => {
 
           <div className="grid grid-cols-[1fr_250px_1fr] gap-x-8 xl:grid-cols-[1fr_270px_1fr] xl:gap-x-12">
 
-            {/* LEFT 3 */}
+            {/* LEFT 3 CARDS */}
             <div className="space-y-3">
               {businesses.slice(0, 3).map((item, index) => (
                 <BusinessRow
@@ -195,9 +194,9 @@ const WhoWeServeSection = () => {
               </div>
             </div>
 
-            {/* RIGHT 3 */}
-            <div className="space-y-3">
-              {businesses.slice(3, 6).map((item, index) => (
+            {/* RIGHT 2 CARDS */}
+            <div className="flex flex-col justify-center gap-3">
+              {businesses.slice(3).map((item, index) => (
                 <BusinessRow
                   key={item.no}
                   item={item}
@@ -252,7 +251,9 @@ const WhoWeServeSection = () => {
 
                 <span
                   className={`absolute bottom-0 left-0 h-[3px] w-[45px] ${
-                    isOrange ? "bg-orange-500" : "bg-[#438D76]"
+                    isOrange
+                      ? "bg-orange-500"
+                      : "bg-[#438D76]"
                   }`}
                 />
               </div>
@@ -262,20 +263,13 @@ const WhoWeServeSection = () => {
 
         {/* BOTTOM STRIP */}
         <div className="mt-9 flex flex-wrap items-center justify-center gap-x-5 gap-y-3 border-t border-[#CED7D2] pt-6">
-          {[
-            "Hospitality",
-            "Travel",
-            "Parlour & Salons",
-            "Startups",
-            "Distribution",
-            "Corporate",
-          ].map((item, index) => (
+          {bottomItems.map((item, index) => (
             <React.Fragment key={item}>
               <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-[#66736C]">
                 {item}
               </span>
 
-              {index !== 5 && (
+              {index !== bottomItems.length - 1 && (
                 <span
                   className={`h-[5px] w-[5px] rounded-full ${
                     index % 2 === 0
@@ -336,7 +330,11 @@ const BusinessRow = ({ item, side, index }) => {
       <div
         className={`
           flex h-full items-center gap-5 p-5 xl:p-6
-          ${side === "left" ? "flex-row-reverse text-right" : ""}
+          ${
+            side === "left"
+              ? "flex-row-reverse text-right"
+              : ""
+          }
         `}
       >
         {/* ICON */}
@@ -402,7 +400,11 @@ const BusinessRow = ({ item, side, index }) => {
           absolute top-1/2 h-px w-[20px]
           -translate-y-1/2
           bg-[#AFC0B7]
-          ${side === "left" ? "-right-[20px]" : "-left-[20px]"}
+          ${
+            side === "left"
+              ? "-right-[20px]"
+              : "-left-[20px]"
+          }
         `}
       />
 
@@ -412,8 +414,16 @@ const BusinessRow = ({ item, side, index }) => {
           absolute bottom-0 h-[3px] w-0
           transition-all duration-500
           group-hover:w-[80px]
-          ${side === "left" ? "right-0" : "left-0"}
-          ${isOrange ? "bg-orange-500" : "bg-[#438D76]"}
+          ${
+            side === "left"
+              ? "right-0"
+              : "left-0"
+          }
+          ${
+            isOrange
+              ? "bg-orange-500"
+              : "bg-[#438D76]"
+          }
         `}
       />
     </div>

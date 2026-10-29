@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -64,7 +63,6 @@ const HotelAmenitiesSection = () => {
 
   return (
     <section className="relative overflow-hidden bg-white py-14 sm:py-16 lg:py-[72px]">
-
       {/* SLIDER ANIMATION */}
       <style>{`
         @keyframes hotelAmenitiesScroll {
@@ -94,13 +92,11 @@ const HotelAmenitiesSection = () => {
       `}</style>
 
       <div className="mx-auto max-w-[1400px] px-5 sm:px-7 lg:px-10">
-
         {/* =========================
             HEADER
         ========================== */}
 
         <div className="mx-auto max-w-[820px] text-center">
-
           <div className="flex items-center justify-center gap-3">
             <span className="h-px w-8 bg-[#BFC8C3]" />
 
@@ -142,8 +138,8 @@ const HotelAmenitiesSection = () => {
               sm:text-[16px]
             "
           >
-            Explore essential hotel amenities designed to support a
-            comfortable and complete guest experience.
+            Explore essential hotel amenities designed to support a comfortable
+            and complete guest experience.
           </p>
         </div>
 
@@ -152,7 +148,6 @@ const HotelAmenitiesSection = () => {
         ========================== */}
 
         <div className="hotel-amenities-slider relative mt-9 overflow-hidden sm:mt-11">
-
           {/* LEFT FADE */}
           <div
             aria-hidden="true"
@@ -181,7 +176,6 @@ const HotelAmenitiesSection = () => {
 
           {/* SLIDER TRACK */}
           <div className="hotel-amenities-track flex w-max">
-
             {sliderItems.map((item, index) => (
               <div
                 key={`${item.name}-${index}`}
@@ -197,7 +191,6 @@ const HotelAmenitiesSection = () => {
                 "
               >
                 <div className="group">
-
                   {/* PRODUCT CARD */}
                   <div
                     className="
@@ -220,9 +213,6 @@ const HotelAmenitiesSection = () => {
                       lg:h-[350px]
                     "
                   >
-
-                    
-
                     {/* TOP ACCENTS */}
                     <div className="absolute left-5 top-5 flex items-center gap-2">
                       <span className="h-[7px] w-[7px] rounded-full bg-[#F07832]" />
@@ -231,23 +221,25 @@ const HotelAmenitiesSection = () => {
                     </div>
 
                     {/* PRODUCT IMAGE */}
+                    {/* PRODUCT IMAGE */}
                     <img
                       src={item.image}
                       alt={item.name}
                       loading="lazy"
                       draggable="false"
                       className="
-                        relative z-10
-                        h-[96%]
-                        w-[96%]
-                        object-contain
-                        p-1
-                        transition-all
-                        duration-500
-                        ease-out
-                        group-hover:-translate-y-[4px]
-                        group-hover:scale-[1.05]
-                      "
+    relative z-10
+    h-full
+    w-full
+    object-contain
+    scale-[1.05]
+    p-0
+    transition-all
+    duration-500
+    ease-out
+    group-hover:-translate-y-[4px]
+    group-hover:scale-[1.10]
+  "
                     />
 
                     {/* HOVER LINE */}
@@ -270,7 +262,6 @@ const HotelAmenitiesSection = () => {
 
                   {/* PRODUCT INFORMATION */}
                   <div className="px-1 pt-4 text-center">
-
                     <span
                       className="
                         text-[9px]
@@ -303,7 +294,6 @@ const HotelAmenitiesSection = () => {
                 </div>
               </div>
             ))}
-
           </div>
         </div>
 
@@ -312,7 +302,6 @@ const HotelAmenitiesSection = () => {
         ========================== */}
 
         <div className="mt-9 flex flex-col items-center text-center sm:mt-10">
-
           {/* SMALL ACCENT */}
           <div className="mb-4 flex items-center gap-3">
             <span className="h-px w-8 bg-[#BEC9C3]" />
@@ -363,7 +352,6 @@ const HotelAmenitiesSection = () => {
             "
           >
             View All Hotel Amenities
-
             <ArrowRight
               size={16}
               strokeWidth={2.2}

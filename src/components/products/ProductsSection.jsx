@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import {
   X,
@@ -27,10 +26,7 @@ const products = [
       ["Skin Type", "Dry, Normal, Oily"],
       ["Age Group", "Above 15 Years"],
       ["Fragrance", "No"],
-      [
-        "Key Ingredients",
-        "Aamalaki, Kwath, Kumari Kwath, Bhringraj Kwath",
-      ],
+      ["Key Ingredients", "Aamalaki, Kwath, Kumari Kwath, Bhringraj Kwath"],
       ["Shelf Life", "24 Months"],
       ["Storage", "Store in Cool & Dry Place"],
       ["Country of Origin", "India"],
@@ -61,10 +57,7 @@ const products = [
       ["Skin Type", "Oily & Normal Skin"],
       ["Age Group", "Above 20 Years"],
       ["Fragrance", "No"],
-      [
-        "Key Ingredients",
-        "Neem Churna, Tankan Bhasma, Gandhak Bhasma, Kapoor",
-      ],
+      ["Key Ingredients", "Neem Churna, Tankan Bhasma, Gandhak Bhasma, Kapoor"],
       ["Form", "Powder"],
       ["Shelf Life", "24 Months"],
       ["Storage", "Store in Cool & Dry Place"],
@@ -353,7 +346,7 @@ const ProductsSection = () => {
     if (!selectedProduct) return "#";
 
     const message = encodeURIComponent(
-      `Hello Mutation Dermacare, I want to enquire about ${selectedProduct.name}.`
+      `Hello Mutation Dermacare, I want to enquire about ${selectedProduct.name}.`,
     );
 
     return `https://wa.me/919921269023?text=${message}`;
@@ -367,7 +360,6 @@ const ProductsSection = () => {
         className="relative bg-[#F7F7F5] py-14 sm:py-16 lg:py-[68px]"
       >
         <div className="mx-auto max-w-[1280px] px-5 sm:px-7 lg:px-10 xl:px-12">
-
           {/* HEADING */}
           <div className="mb-9 max-w-[700px]">
             <div className="flex items-center gap-3">
@@ -383,8 +375,8 @@ const ProductsSection = () => {
             </h2>
 
             <p className="mt-3 max-w-[650px] text-[15px] font-medium leading-[1.7] text-[#505C56] sm:text-[16px]">
-              Explore our personal skin care range for everyday
-              skincare, haircare, bath and hygiene requirements.
+              Explore our personal skin care range for everyday skincare,
+              haircare, bath and hygiene requirements.
             </p>
           </div>
 
@@ -407,30 +399,29 @@ const ProductsSection = () => {
                 "
               >
                 {/* BIGGER PRODUCT IMAGE */}
-                
-{/* PRODUCT IMAGE - SAME CARD SIZE, BIGGER IMAGE */}
-<div className="relative flex h-[245px] items-center justify-center overflow-hidden bg-[#F4F3EF] sm:h-[255px]">
-  <span className="absolute right-3 top-3 z-10 rounded-[6px] bg-orange-500 px-3 py-[6px] text-[11px] font-bold text-white">
-    {product.badge}
-  </span>
 
-  <img
-    src={product.image}
-    alt={product.name}
-    loading="lazy"
-    className="
+                {/* PRODUCT IMAGE - SLIGHTLY BIGGER, SAME CARD SIZE */}
+                <div className="relative flex h-[245px] items-center justify-center overflow-hidden bg-[#F4F3EF] sm:h-[255px]">
+                  <span className="absolute right-3 top-3 z-10 rounded-[6px] bg-orange-500 px-3 py-[6px] text-[11px] font-bold text-white">
+                    {product.badge}
+                  </span>
+
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    loading="lazy"
+                    className="
       h-full
       w-full
       object-contain
       p-0
-      scale-[1.12]
+      scale-[1.16]
       transition-transform
       duration-500
-      group-hover:scale-[1.18]
+      group-hover:scale-[1.22]
     "
-  />
-</div>
-
+                  />
+                </div>
 
                 {/* CARD CONTENT */}
                 <div className="p-4">
@@ -521,7 +512,6 @@ const ProductsSection = () => {
 
             {/* MODAL CONTENT */}
             <div className="px-4 pb-5 pt-4 sm:px-6">
-
               {/* BIGGER MODAL IMAGE */}
               <div
                 className="
@@ -626,10 +616,7 @@ const ProductsSection = () => {
 
                 <div className="mt-3 space-y-2">
                   {selectedProduct.benefits.map((benefit, index) => (
-                    <div
-                      key={benefit}
-                      className="flex items-start gap-3"
-                    >
+                    <div key={benefit} className="flex items-start gap-3">
                       <span className="flex h-[23px] w-[23px] shrink-0 items-center justify-center rounded-[5px] bg-[#FFF1E7] text-[10px] font-bold text-orange-600">
                         {String(index + 1).padStart(2, "0")}
                       </span>
@@ -657,7 +644,6 @@ const ProductsSection = () => {
                 </p>
 
                 <div className="mt-3 grid grid-cols-2 gap-2.5">
-
                   {/* WHATSAPP */}
                   <a
                     href={getWhatsAppLink()}
@@ -697,11 +683,7 @@ const ProductsSection = () => {
                       sm:text-[14px]
                     "
                   >
-                    <Phone
-                      size={17}
-                      strokeWidth={2.4}
-                      className="shrink-0"
-                    />
+                    <Phone size={17} strokeWidth={2.4} className="shrink-0" />
                     <span>Call Now</span>
                   </a>
                 </div>
